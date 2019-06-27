@@ -1,0 +1,34 @@
+
+Initiate Proposal:
+-------------------
+flow start ProposalFlow$Initiator isBuyer: true, amount: 10, counterparty: PartyB
+
+View Proposal in Vault:
+------------------------
+
+run vaultQuery contractStateType: negotiation.contracts.ProposalState
+
+NOTE: Copy the linearId.id from the response, we will use this to modify the proposal state.
+
+Modify Proposal:
+----------------
+
+If we note down the state's linearId.id, we can now modify the proposal from the shell of PartyB by running:
+
+flow start ModificationFlow$Initiator proposalId: 7b90d0a9-ca68-4b5b-84ff-f6281d247868, newAmount: 8
+
+This flow can be only be executed by the party receiving the proposal state.
+
+Acceptance Proposal:
+---------------------
+
+Finally, let's have PartyA accept the proposal:
+
+flow start AcceptanceFlow$Initiator proposalId: 7b90d0a9-ca68-4b5b-84ff-f6281d247868
+
+View Acceptance/Trade Proposal:
+-------------------------------
+
+Once the acceptance flow has been successfully executed the Proposal State is transformed into a Trade State.  We can now see the accepted trade in our vault with the new value by running the command (note we are now querying for TradeStates, not ProposalStates):
+
+run vaultQuery contractStateType: negotiation.contracts.TradeState
