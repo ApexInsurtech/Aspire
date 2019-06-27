@@ -33,7 +33,7 @@ springBoot {
 task runTemplateClient(type: JavaExec, dependsOn: assemble) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'com.template.ClientKt'
-    args 'localhost:10006', 'user1', 'test'
+    args 'localhost:10077', 'user1', 'test'
 }
 
 task runTemplateServer(type: JavaExec, dependsOn: assemble) {
