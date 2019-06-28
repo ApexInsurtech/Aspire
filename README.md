@@ -2,12 +2,9 @@
   <img src="https://www.corda.net/wp-content/uploads/2016/11/fg005_corda_b.png" alt="Corda" width="500">
 </p>
 
-# CorDapp Template - Kotlin
+# APEX ASPIRE
 
-Welcome to the Kotlin CorDapp template. The CorDapp template is a stubbed-out CorDapp that you can use to bootstrap 
-your own CorDapps.
-
-**This is the Kotlin version of the CorDapp template. The Java equivalent is 
+If you are reading this it is because you are part of a privileged group of people whom I trust very much.  This repo has been cloned from the original Kotlin version of the CorDapp template. The Java equivalent is
 [here](https://github.com/corda/cordapp-template-java/).**
 
 # Pre-Requisites
@@ -34,9 +31,15 @@ If you would prefer to use the built in IntelliJ JUnit test runner, you can run 
 copy your quasar JAR file to the lib directory. You will then need to specify ``-javaagent:lib/quasar.jar``
 and set the run directory to the project root directory for each test.
 
+## Corda Shell Commands
+
+https://docs.corda.net/shell.html
+
 ## Running the nodes
 
-See https://docs.corda.net/tutorial-cordapp.html#running-the-example-cordapp.
+To start a node on its own or to restart a node if it does not start up properly the first time, go to: IdeaProjects/Aspire/build/nodes/PartyA or whichever party/node you wish to run and execute: java -jar corda.jar
+
+To run the webserver, as above, cd into the folder of the relevant node : java -jar corda-webserver.jar
 
 ## Interacting with the nodes
 
