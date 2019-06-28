@@ -1,7 +1,7 @@
 
 Initiate Proposal:
 -------------------
-flow start ProposalFlow$Initiator isBuyer: true, amount: 10, counterparty: PartyB
+flow start ProposalFlow$Initiator isBuyer: true, amount: 10, counterparty: InsurerC
 
 View Proposal in Vault:
 ------------------------
