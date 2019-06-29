@@ -20,7 +20,17 @@ Run the webserver by opening a terminal window in the node’s folder and runnin
 
 java -jar corda.jar
 
+## Starting all the nodes at the same time
 
+To start all the nodes at the same time, cd to the Aspire main folder and execute the relevant gradle file.  For linux use:
+
+./gradlew clean deployNodes
+
+The clean switch starts fresh nodes, clearing the vault data that may be left from any previous nodes
+
+To deploy in windows:
+
+gradlew.bat clean deployNode
 
 ## Running tests inside IntelliJ
 
