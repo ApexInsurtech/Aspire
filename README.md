@@ -24,7 +24,7 @@ To start all the nodes and webservers at the same time, cd to the Aspire main fo
 
 The clean switch starts fresh nodes, clearing the vault data that may be left from any previous nodes
 
-####To deploy in windows:
+#### To deploy in windows:
 
 ```gradlew.bat clean deployNode``` Deploys Nodes
 
