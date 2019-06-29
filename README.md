@@ -74,7 +74,7 @@ While the sole template endpoint is served on:
 
 ### OUR DEMO:
 
-##### A Broker requests a quote from an Insurer (creating a Proposal) 
+#### A Broker requests a quote from an Insurer (creating a Proposal) 
 
 In our cordapp any node can create a proposal to any other node.  The node that is making the proposal is the _proposer_ and the node that is receiving the proposal is the _proposee_.  Please note that these role's change each time a proposal is sent back or forth.  The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
 
