@@ -7,7 +7,7 @@ If you are reading this it is because you are part of a privileged few, whom I t
 
 See https://docs.corda.net/getting-set-up.html.
 
-## Starting all the nodes at the same time
+### Starting all the nodes at the same time
 
 To start all the nodes at the same time, cd to the Aspire main folder and execute the relevant gradle file.  For linux use:
 
@@ -19,7 +19,7 @@ To deploy in windows:
 
 ```gradlew.bat clean deployNode```
 
-## Start the nodes web server
+### Start the nodes web server
 
 To start the webserver, navigate to the main Aspire folder and execute the following for linux:
 
@@ -29,19 +29,19 @@ for windows:
 
 ```gradlew.bat runTemplateClient```
 
-This gradle task allow us to start the webservers for each node.  The webserver api points can be defined in the following file:
+This gradle task allow us to start the webservers for each node.  The webserver api points can be defined in the controller.kt file: 
 
-
+```Aspire/clients/src/main/kotlin/com/template/webserver/controller.kt```
 
 This will run the webserver's for the nodes,  By default, it connects to the node with RPC address `localhost:10006` with the username `user1` and the password `test`.
 
-## Starting node's individually
+### Starting node's individually
 
 Run a node by opening a terminal window in the node’s folder and running:
 
 ```java -jar corda.jar```
 
-## A Broker requests a quote from an Insurer (creating a Proposal) 
+### A Broker requests a quote from an Insurer (creating a Proposal) 
 
 At the moment any node can create a proposal to any other node.  The node that is making the proposal is the proposer and the node that is receiving the proposal is the proposee.  Please note that these role change each time a proposal is sent back or forth.  The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
 
@@ -83,7 +83,7 @@ and prints a list of the other nodes on the network.
 
 By default, it connects to the node with RPC address ```localhost:10006``` with the username `user1` and the password `test`, and serves the webserver on port ```localhost:10050```
 
-#### Running the client
+### Running the client
 
 
 
@@ -92,7 +92,7 @@ By default, it connects to the node with RPC address ```localhost:10006``` with 
 Run the `Run Template Client` run configuration. By default, it connects to the node with RPC address `localhost:10006` 
 with the username `user1` and the password `test`.
 
-### Webserver
+## Webserver
 
 `clients/src/main/kotlin/com/template/webserver/` defines a simple Spring webserver that connects to a node via RPC and 
 allows you to interact with the node over HTTP.
