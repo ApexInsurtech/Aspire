@@ -1,4 +1,4 @@
-# APEX ASPIRE
+#### APEX ASPIRE
 
 
 If you are reading this it is because you are part of a privileged few, whom I trust very much.  This repo has been cloned from the original Kotlin version of the CorDapp template. The Java equivalent is
@@ -34,6 +34,14 @@ Run the webserver by opening a terminal window in the node’s folder and runnin
 
 ```java -jar corda.jar```
 
+
+VIA COMMAND LINE
+
+Run the `runTemplateClient` Gradle task. By default, it connects to the node with RPC address `localhost:10006` with 
+the username `user1` and the password `test`.
+
+
+
 ## A Broker requests a quote from an Insurer (creating a Proposal) 
 
 At the moment any node can create a proposal to any other node.  The node that is making the proposal is the proposer and the node that is receiving the proposal is the proposee.  Please note that these role change each time a proposal is sent back or forth.  The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
@@ -67,7 +75,7 @@ Now we can see that the state has changed.  We can go back and forth as many tim
 
 ```flow start AcceptanceFlow$Initiator proposalId: xx```
 
-This converts the proposal state into a trade state.  The trade state is basically our policy state.
+This converts the proposal state into a trade state.  Next the insurer must convert the trade state into a policy state (TBD).
 
 TESTING:
 
@@ -90,46 +98,6 @@ copy your quasar JAR file to the lib directory. You will then need to specify ``
 and set the run directory to the project root directory for each test.
 
 
-## Interacting with the nodes
-
-### Shell
-
-When started via the command line, each node will display an interactive shell:
-
-    Welcome to the Corda interactive shell.
-    Useful commands include 'help' to see what is available, and 'bye' to shut down the node.
-    
-    Tue Nov 06 11:58:13 GMT 2018>>>
-
-You can use this shell to interact with your node. For example, enter `run networkMapSnapshot` to see a list of 
-the other nodes on the network:
-
-    Tue Nov 06 11:58:13 GMT 2018>>> run networkMapSnapshot
-    [
-      {
-      "addresses" : [ "localhost:10002" ],
-      "legalIdentitiesAndCerts" : [ "O=Notary, L=London, C=GB" ],
-      "platformVersion" : 3,
-      "serial" : 1541505484825
-    },
-      {
-      "addresses" : [ "localhost:10005" ],
-      "legalIdentitiesAndCerts" : [ "O=PartyA, L=London, C=GB" ],
-      "platformVersion" : 3,
-      "serial" : 1541505382560
-    },
-      {
-      "addresses" : [ "localhost:10008" ],
-      "legalIdentitiesAndCerts" : [ "O=PartyB, L=New York, C=US" ],
-      "platformVersion" : 3,
-      "serial" : 1541505384742
-    }
-    ]
-    
-    Tue Nov 06 12:30:11 GMT 2018>>> 
-
-You can find out more about the node shell [here](https://docs.corda.net/shell.html).
-
 ### Client
 
 `clients/src/main/kotlin/com/template/Client.kt` defines a simple command-line client that connects to a node via RPC 
@@ -137,10 +105,6 @@ and prints a list of the other nodes on the network.
 
 #### Running the client
 
-##### Via the command line
-
-Run the `runTemplateClient` Gradle task. By default, it connects to the node with RPC address `localhost:10006` with 
-the username `user1` and the password `test`.
 
 ##### Via IntelliJ
 
