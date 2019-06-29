@@ -72,7 +72,7 @@ While the sole template endpoint is served on:
     http://localhost:10050/templateendpoint
 
 
-##OUR DEMO:
+### OUR DEMO:
 
 ##### A Broker requests a quote from an Insurer (creating a Proposal) 
 
