@@ -3,7 +3,7 @@
 If you are reading this it is because you are part of a privileged few, whom I trust very much.  This repo has been cloned from the original Kotlin version of the CorDapp template. The Java equivalent is
 [here](https://github.com/corda/cordapp-template-java/).**
 
-# Set up Pre-Requisites
+### Set up Pre-Requisites
 
 See https://docs.corda.net/getting-set-up.html.
 
