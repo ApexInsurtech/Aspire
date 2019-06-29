@@ -92,7 +92,6 @@ In the Broker shell execute the following command:
 VIEWING A PROPOSAL:
 
 Now go to InsurerC shell and execute the command below:
-
 ```run vaultQuery contractStateType: negotiation.contracts.ProposalState```
 
 
@@ -149,3 +148,4 @@ and set the run directory to the project root directory for each test.
 
 For a guided example of how to extend this template, see the Hello, World! tutorial 
 [here](https://docs.corda.net/hello-world-introduction.html).
+
