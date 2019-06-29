@@ -12,24 +12,34 @@ See https://docs.corda.net/getting-set-up.html.
 To start all the nodes and webservers at the same time, cd to the Aspire main folder and execute the following commands for linux:
 
 ```./gradlew clean deployNodes``` Deploys Nodes
+
 ```cd build/nodes``` Navigate to nodes folder
+
 ```./runnodes``` Runs the nodes
+
 ```cd Aspire``` Navigate back to main folder
+
 ```./gradlew runTemplateClient``` Deploys Webservers
+
 
 The clean switch starts fresh nodes, clearing the vault data that may be left from any previous nodes
 
 To deploy in windows:
 
-```gradlew.bat clean deployNode```
+```gradlew.bat clean deployNode``` Deploys Nodes
+
 ```cd build/nodes``` Navigate to nodes folder
+
 ```runnodes``` Runs the nodes
+
 ```cd Aspire``` Navigate back to main folder
+
 ```gradlew.bat runTemplateClient``` Deploys Webservers
+
 
 #### Starting node's individually
 
-Run a node by opening a terminal window in the node’s folder and running:
+Occassionally node will fail to start.  If this is the case we can run node's individually by opening a terminal window within the node’s folder and running:
 
 ```java -jar corda.jar```
 
