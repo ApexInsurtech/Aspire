@@ -3,47 +3,67 @@
 If you are reading this it is because you are part of a privileged few, whom I trust very much.  This repo has been cloned from the original Kotlin version of the CorDapp template. The Java equivalent is
 [here](https://github.com/corda/cordapp-template-java/).**
 
-### Set up Pre-Requisites
+#### Set up Pre-Requisites
 
 See https://docs.corda.net/getting-set-up.html.
 
-### Starting all the nodes at the same time
+#### Starting all the nodes at the same time
 
-To start all the nodes at the same time, cd to the Aspire main folder and execute the relevant gradle file.  For linux use:
+To start all the nodes and webservers at the same time, cd to the Aspire main folder and execute the following commands for linux:
 
-```./gradlew clean deployNodes```
+```./gradlew clean deployNodes``` Deploys Nodes
+```cd build/nodes``` Navigate to nodes folder
+```./runnodes``` Runs the nodes
+```cd Aspire``` Navigate back to main folder
+```./gradlew runTemplateClient``` Deploys Webservers
 
 The clean switch starts fresh nodes, clearing the vault data that may be left from any previous nodes
 
 To deploy in windows:
 
 ```gradlew.bat clean deployNode```
+```cd build/nodes``` Navigate to nodes folder
+```runnodes``` Runs the nodes
+```cd Aspire``` Navigate back to main folder
+```gradlew.bat runTemplateClient``` Deploys Webservers
 
-### Start the nodes web server
-
-To start the webserver, navigate to the main Aspire folder and execute the following for linux:
-
-```./gradlew runTemplateClient```
-
-for windows:
-
-```gradlew.bat runTemplateClient```
-
-This gradle task allow us to start the webservers for each node.  The webserver api points can be defined in the controller.kt file: 
-
-```Aspire/clients/src/main/kotlin/com/template/webserver/controller.kt```
-
-This will run the webserver's for the nodes,  By default, it connects to the node with RPC address `localhost:10006` with the username `user1` and the password `test`.
-
-### Starting node's individually
+#### Starting node's individually
 
 Run a node by opening a terminal window in the node’s folder and running:
 
 ```java -jar corda.jar```
 
-### A Broker requests a quote from an Insurer (creating a Proposal) 
+## The Spring Webserver
 
-In our cordapp any node can create a proposal to any other node.  The node that is making the proposal is the proposer and the node that is receiving the proposal is the proposee.  Please note that these role's change each time a proposal is sent back or forth.  The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
+`clients/src/main/kotlin/com/template/webserver/` defines a simple Spring webserver that connects to a node via RPC and allows you to interact with the node over HTTP.
+
+The API endpoints are defined here:
+
+     clients/src/main/kotlin/com/template/webserver/Controller.kt
+
+And a static webpage is defined here:
+
+     clients/src/main/resources/static/
+
+
+By default, it connects to the node with RPC address `localhost:10006` with the username `user1` and the password `test`.
+
+#### Interacting with the webserver
+
+The static webpage is served on:
+
+    http://localhost:10050
+
+While the sole template endpoint is served on:
+
+    http://localhost:10050/templateendpoint
+
+
+##OUR DEMO:
+
+##### A Broker requests a quote from an Insurer (creating a Proposal) 
+
+In our cordapp any node can create a proposal to any other node.  The node that is making the proposal is the _proposer_ and the node that is receiving the proposal is the _proposee_.  Please note that these role's change each time a proposal is sent back or forth.  The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
 
 CREATING A PROPOSAL:
 
@@ -83,55 +103,7 @@ Now we can see that the state has changed.  We can go back and forth as many tim
 
 This converts the proposal state into a trade state.  Next the insurer must convert the trade state into a policy state (TBD).
 
-### Client
 
-`clients/src/main/kotlin/com/template/Client.kt` defines a simple command-line client that connects to a node via RPC 
-and prints a list of the other nodes on the network.
-
-By default, it connects to the node with RPC address ```localhost:10006``` with the username `user1` and the password `test`, and serves the webserver on port ```localhost:10050```
-
-### Running the client
-
-
-
-##### Via IntelliJ
-
-Run the `Run Template Client` run configuration. By default, it connects to the node with RPC address `localhost:10006` 
-with the username `user1` and the password `test`.
-
-## Webserver
-
-`clients/src/main/kotlin/com/template/webserver/` defines a simple Spring webserver that connects to a node via RPC and 
-allows you to interact with the node over HTTP.
-
-The API endpoints are defined here:
-
-     clients/src/main/kotlin/com/template/webserver/Controller.kt
-
-And a static webpage is defined here:
-
-     clients/src/main/resources/static/
-
-#### Running the webserver
-
-##### Via the command line
-
-Run the `runTemplateServer` Gradle task. 
-
-##### Via IntelliJ
-
-Run the `Run Template Server` run configuration. By default, it connects to the node with RPC address `localhost:10006` 
-with the username `user1` and the password `test`, and serves the webserver on port `localhost:10050`.
-
-#### Interacting with the webserver
-
-The static webpage is served on:
-
-    http://localhost:10050
-
-While the sole template endpoint is served on:
-
-    http://localhost:10050/templateendpoint
     
 # Extending the template
 
