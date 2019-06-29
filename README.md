@@ -1,24 +1,12 @@
 # APEX ASPIRE
 
+
 If you are reading this it is because you are part of a privileged few, whom I trust very much.  This repo has been cloned from the original Kotlin version of the CorDapp template. The Java equivalent is
 [here](https://github.com/corda/cordapp-template-java/).**
 
 # Set up Pre-Requisites
 
 See https://docs.corda.net/getting-set-up.html.
-
-## Running Nodes
-
-Run a node by opening a terminal window in the node’s folder and running:
-
-```java -jar corda.jar```
-
-## Start the nodes webserver
-
-
-Run the webserver by opening a terminal window in the node’s folder and running:
-
-```java -jar corda.jar```
 
 ## Starting all the nodes at the same time
 
@@ -31,6 +19,20 @@ The clean switch starts fresh nodes, clearing the vault data that may be left fr
 To deploy in windows:
 
 ```gradlew.bat clean deployNode```
+
+
+## Starting node's individually
+
+Run a node by opening a terminal window in the node’s folder and running:
+
+```java -jar corda.jar```
+
+## Start the nodes webserver
+
+
+Run the webserver by opening a terminal window in the node’s folder and running:
+
+```java -jar corda.jar```
 
 ## A Broker requests a quote from an Insurer (creating a Proposal) 
 
