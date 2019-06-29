@@ -9,7 +9,10 @@ See https://docs.corda.net/getting-set-up.html.
 
 #### Starting all the nodes at the same time
 
-To start all the nodes and webservers at the same time, cd to the Aspire main folder and execute the following commands for linux:
+To start all the nodes and webservers at the same time, cd to the Aspire main folder and execute the following:
+
+
+#### To deploy in Linux:
 
 ```./gradlew clean deployNodes``` Deploys Nodes
 
@@ -26,7 +29,7 @@ The clean switch starts fresh nodes, clearing the vault data that may be left fr
 
 #### To deploy in windows:
 
-```gradlew.bat clean deployNode``` Deploys Nodes
+```gradlew.bat clean deployNodes``` Deploys Nodes
 
 ```cd build/nodes``` Navigate to nodes folder
 
