@@ -1,5 +1,4 @@
-#### APEX ASPIRE
-
+## **APEX ASPIRE**
 
 If you are reading this it is because you are part of a privileged few, whom I trust very much.  This repo has been cloned from the original Kotlin version of the CorDapp template. The Java equivalent is
 [here](https://github.com/corda/cordapp-template-java/).**
@@ -20,27 +19,27 @@ To deploy in windows:
 
 ```gradlew.bat clean deployNode```
 
+## Start the nodes web server
+
+To start the webserver, navigate to the main Aspire folder and execute the following for linux:
+
+```./gradlew runTemplateClient```
+
+for windows:
+
+```gradlew.bat runTemplateClient```
+
+This gradle task allow us to start the webservers for each node.  The webserver api points can be defined in the following file:
+
+
+
+This will run the webserver's for the nodes,  By default, it connects to the node with RPC address `localhost:10006` with the username `user1` and the password `test`.
 
 ## Starting node's individually
 
 Run a node by opening a terminal window in the node’s folder and running:
 
 ```java -jar corda.jar```
-
-## Start the nodes webserver
-
-
-Run the webserver by opening a terminal window in the node’s folder and running:
-
-```java -jar corda.jar```
-
-
-VIA COMMAND LINE
-
-Run the `runTemplateClient` Gradle task. By default, it connects to the node with RPC address `localhost:10006` with 
-the username `user1` and the password `test`.
-
-
 
 ## A Broker requests a quote from an Insurer (creating a Proposal) 
 
@@ -77,33 +76,15 @@ Now we can see that the state has changed.  We can go back and forth as many tim
 
 This converts the proposal state into a trade state.  Next the insurer must convert the trade state into a policy state (TBD).
 
-TESTING:
-
-## Running tests inside IntelliJ
-
-We recommend editing your IntelliJ preferences so that you use the Gradle runner - this means that the quasar utils
-plugin will make sure that some flags (like ``-javaagent`` - see below) are
-set for you.
-
-To switch to using the Gradle runner:
-
-* Navigate to ``File, Settings, Build, Execution, Deployment -> Build Tools -> Gradle -> Runner`` (or search for `runner`)
-  * Windows: this is in "Settings"
-  * MacOS: this is in "Preferences"
-* Set "Delegate IDE build/run actions to gradle" to true
-* Set "Run test using:" to "Gradle Test Runner"
-
-If you would prefer to use the built in IntelliJ JUnit test runner, you can run ``gradlew installQuasar`` which will
-copy your quasar JAR file to the lib directory. You will then need to specify ``-javaagent:lib/quasar.jar``
-and set the run directory to the project root directory for each test.
-
-
 ### Client
 
 `clients/src/main/kotlin/com/template/Client.kt` defines a simple command-line client that connects to a node via RPC 
 and prints a list of the other nodes on the network.
 
+By default, it connects to the node with RPC address ```localhost:10006``` with the username `user1` and the password `test`, and serves the webserver on port ```localhost:10050```
+
 #### Running the client
+
 
 
 ##### Via IntelliJ
@@ -128,8 +109,7 @@ And a static webpage is defined here:
 
 ##### Via the command line
 
-Run the `runTemplateServer` Gradle task. By default, it connects to the node with RPC address `localhost:10006` with 
-the username `user1` and the password `test`, and serves the webserver on port `localhost:10050`.
+Run the `runTemplateServer` Gradle task. 
 
 ##### Via IntelliJ
 
@@ -153,6 +133,27 @@ You should extend this template as follows:
 * Add your own state and contract definitions under `contracts/src/main/kotlin/`
 * Add your own flow definitions under `workflows/src/main/kotlin/`
 * Extend or replace the client and webserver under `clients/src/main/kotlin/`
+
+TESTING:
+
+## Running tests inside IntelliJ
+
+We recommend editing your IntelliJ preferences so that you use the Gradle runner - this means that the quasar utils
+plugin will make sure that some flags (like ``-javaagent`` - see below) are
+set for you.
+
+To switch to using the Gradle runner:
+
+* Navigate to ``File, Settings, Build, Execution, Deployment -> Build Tools -> Gradle -> Runner`` (or search for `runner`)
+  * Windows: this is in "Settings"
+  * MacOS: this is in "Preferences"
+* Set "Delegate IDE build/run actions to gradle" to true
+* Set "Run test using:" to "Gradle Test Runner"
+
+If you would prefer to use the built in IntelliJ JUnit test runner, you can run ``gradlew installQuasar`` which will
+copy your quasar JAR file to the lib directory. You will then need to specify ``-javaagent:lib/quasar.jar``
+and set the run directory to the project root directory for each test.
+
 
 For a guided example of how to extend this template, see the Hello, World! tutorial 
 [here](https://docs.corda.net/hello-world-introduction.html).
