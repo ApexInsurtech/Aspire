@@ -82,7 +82,7 @@ CREATING A PROPOSAL:
 
 ``ProposalFlow$Initiator``
 
-This flow creates a proposal to InsurerC, this proposal will have the data Amount = 10, and isBuyer = true.
+This flow creates a proposal to Insurer C, this proposal will have the data Amount = 10, and isBuyer = true.
 
 In the Broker shell execute the following command:
 
