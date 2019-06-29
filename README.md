@@ -57,7 +57,7 @@ Now assume that InsurerC wishes to modify the agreement and return it to the Bro
 
 ```flow start ModificationFlow$Initiator proposalId: xx, newAmount: 8```
 
-Where xx is the liner ID taken from the vault, also notice that we have amended the amount to 8.
+Where xx is the linear ID taken from the vault, also notice that we have amended the amount to 8.
 
 Again go back to Broker Shell and execute a vault query:
 
