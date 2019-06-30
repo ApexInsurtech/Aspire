@@ -84,6 +84,6 @@ class YoContract : Contract {
 data class YoState(val origin: Party,
                    val target: Party,
                    val message: String ) : ContractState {
-    override val participants = listOf(target)
+    override val participants = listOf(origin, target)
     override fun toString() = "${origin.name}: $message"
 }
