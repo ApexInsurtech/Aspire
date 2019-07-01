@@ -42,43 +42,25 @@ The clean switch starts fresh nodes, clearing the vault data that may be left fr
 
 #### Starting node's individually
 
-Occassionally node will fail to start.  If this is the case we can run node's individually by opening a terminal window within the node’s folder and running:
+Occassionally a node will fail to start.  In this situation we can run a node individually by opening a terminal window within the node’s folder (cd build/nodes) and running:
 
 ```java -jar corda.jar```
 
-## The Spring Webserver
 
-`clients/src/main/kotlin/com/template/webserver/` defines a simple Spring webserver that connects to a node via RPC and allows you to interact with the node over HTTP.
-
-The API endpoints are defined here:
-
-     clients/src/main/kotlin/com/template/webserver/Controller.kt
-
-And a static webpage is defined here:
-
-     clients/src/main/resources/static/
+#### OUR DEMO:
 
 
-By default, it connects to the node with RPC address `localhost:10006` with the username `user1` and the password `test`.
-
-#### Interacting with the webserver
-
-The static webpage is served on:
-
-    http://localhost:10050
-
-While the sole template endpoint is served on:
-
-    http://localhost:10050/templateendpoint
+For now we will execute all flows from the node shell. Once all flows are working will will integrate Spring etc.
 
 
-### OUR DEMO:
+### A Broker requests a quote from an Insurer (creating a Proposal) 
 
-#### A Broker requests a quote from an Insurer (creating a Proposal) 
+In our cordapp any node can create a proposal to any other node.  The node that is making the proposal is the _proposer_ and the node that is receiving the proposal is the _proposee_.  Please note that these role's change each time a proposal is sent back or forth.  
 
-In our cordapp any node can create a proposal to any other node.  The node that is making the proposal is the _proposer_ and the node that is receiving the proposal is the _proposee_.  Please note that these role's change each time a proposal is sent back or forth.  The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
+The commands below must be executed from the relevant node shell.  Change the amounts, parties as required, and be sure to add the correct linear ID (you can access this by doing a vault query, more below).
 
-CREATING A PROPOSAL:
+
+#### CREATING A PROPOSAL:
 
 ``ProposalFlow$Initiator``
 
@@ -89,7 +71,7 @@ In the Broker shell execute the following command:
 ```flow start ProposalFlow$Initiator isBuyer: true, amount: 10, counterparty: InsurerC```
 
 
-VIEWING A PROPOSAL:
+#### VIEWING A PROPOSAL:
 
 Now go to InsurerC shell and execute the command below:
 ```run vaultQuery contractStateType: negotiation.contracts.ProposalState```
