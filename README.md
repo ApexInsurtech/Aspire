@@ -115,16 +115,26 @@ Now we can see that the state has changed.  We can go back and forth as many tim
 
 This converts the proposal state into a trade state.  Next the insurer must convert the trade state into a policy state (TBD).
 
+SENDING A MESSAGE FROM ONE NODE TO ANOTHER:
+
+```flow start YoFlow target: [NODE_NAME]```
+
+To view the sent/recieived messages:
+
+```run vaultQuery contractStateType: net.corda.yo.YoState```
+
+
+
 
     
-# Extending the template
+# ADDING ADDITIONAL FUNCTIONS FROM OTHER CORDAPPS:
 
-You should extend this template as follows:
+We can extend this base template to incorporate features from other cordapps.  This requires some reconfiguring of the code.  This is our mission!  You should extend this template as follows:
 
-* Add your own state and contract definitions under `contracts/src/main/kotlin/`
-* Add your own flow definitions under `workflows/src/main/kotlin/`
+* Add state and contract definitions under `contracts/src/main/kotlin/`
+* Add flow definitions under `workflows/src/main/kotlin/`
 * Extend or replace the client and webserver under `clients/src/main/kotlin/`
-
+---------------------------------------------------------------------------------------------------------------------------------
 TESTING:
 
 ## Running tests inside IntelliJ
