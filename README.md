@@ -147,7 +147,8 @@ TO DO:
 - Group Chat -  NEARLY DONE
 - File Upload 
 - IoT - See Jira for Fuzz comments
-- Payment -  Corda Settler
+- Claim State - This state will be used to handle claims
+- Payment - Corda Settler
 - ReInsurancePolicyState - A very simple variation of the Insurance Policy but inputs will the InsurancePolicyState
 - Spring Boot to create API's 
 - Basic Front End using above API's
