@@ -166,9 +166,9 @@ We can extend this base template to incorporate features from other cordapps.  T
 * Extend or replace the client and webserver under `clients/src/main/kotlin/`
 ---------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------
-TESTING:
+#### TESTING:
 
-## Running tests inside IntelliJ
+Running tests inside IntelliJ
 
 We recommend editing your IntelliJ preferences so that you use the Gradle runner - this means that the quasar utils
 plugin will make sure that some flags (like ``-javaagent`` - see below) are
