@@ -117,15 +117,44 @@ This converts the proposal state into a trade state.  Next the insurer must conv
 
 SENDING A MESSAGE FROM ONE NODE TO ANOTHER:
 
+From the node shell for any node execute the following:
+
 ```flow start YoFlow target: [NODE_NAME]```
 
-To view the sent/recieived messages:
+Where [NODE_NAME] is the name of the recipient node.
+
+We can view all sent/recieived messages by querying our vault:
 
 ```run vaultQuery contractStateType: net.corda.yo.YoState```
 
+NEXT STEPS:
 
+Our next objective is to allow one node to send a message to n number of nodes.  In order to do this we must create 2 new states:
 
+- Group Chat State - This will hold the participants of our group chat
+- Participant State - This will contain the message history for the node
 
+We must take this feature from the poker cordapp and integrate with ours.   
+
+Thoughts:
+
+At the moment node to node message history is stored in a different state than group message history. Is there a better way? Bearing in mind that must always ensure privacy of node to node communications.
+
+TO DO:
+
+- Negotiation - DONE
+- One to One Chat - DONE
+- Group Chat -  NEARLY DONE
+- File Upload 
+- IoT - See Jira for Fuzz comments
+- Payment -  Corda Settler
+- ReInsurancePolicyState - A very simple variation of the Insurance Policy but inputs will the InsurancePolicyState
+- Spring Boot to create API's 
+- Basic Front End using above API's
+- 3 dashboard types, Broker, Insurer, Reinsurer
+- Claims -  This will be 
+
+deadline is end of July.  It may seem as a lot but I know exactly which cordapps we need to use to create our final cordapp.   
     
 # ADDING ADDITIONAL FUNCTIONS FROM OTHER CORDAPPS:
 
@@ -134,6 +163,7 @@ We can extend this base template to incorporate features from other cordapps.  T
 * Add state and contract definitions under `contracts/src/main/kotlin/`
 * Add flow definitions under `workflows/src/main/kotlin/`
 * Extend or replace the client and webserver under `clients/src/main/kotlin/`
+---------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------
 TESTING:
 
