@@ -12,7 +12,7 @@ import net.corda.core.utilities.ProgressTracker
 // Flow.
 @InitiatingFlow
 @StartableByRPC
-class YoFlow(val target: Party, val message : String) : FlowLogic<SignedTransaction>() {
+class YoFlow(val target: Party, val message : String, val sendTo: Party) : FlowLogic<SignedTransaction>() {
 
     override val progressTracker: ProgressTracker = YoFlow.tracker()
 
@@ -34,7 +34,7 @@ class YoFlow(val target: Party, val message : String) : FlowLogic<SignedTransact
         val me = serviceHub.myInfo.legalIdentities.first()
         val notary = serviceHub.networkMapCache.notaryIdentities.single()
         val command = Command(YoContract.Send(), listOf(me.owningKey))
-        val state = YoState(me, target,message)
+        val state = YoState(me, target,message,sendTo)
         val stateAndContract = StateAndContract(state, YoContract.ID)
         val utx = TransactionBuilder(notary = notary).withItems(stateAndContract, command)
 
@@ -83,7 +83,8 @@ class YoContract : Contract {
 @BelongsToContract(YoContract::class)
 data class YoState(val origin: Party,
                    val target: Party,
-                   val message: String ) : ContractState {
+                   val message: String,
+                   val sendTo: Party) : ContractState {
     override val participants = listOf(origin, target)
     override fun toString() = "${origin.name}: $message"
 }

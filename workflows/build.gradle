@@ -50,6 +50,8 @@ dependencies {
 
     // CorDapp dependencies.
     cordapp project(":contracts")
+
+    testCompile 'com.willowtreeapps.assertk:assertk-jvm:0.16'
 }
 
 task integrationTest(type: Test, dependsOn: []) {
