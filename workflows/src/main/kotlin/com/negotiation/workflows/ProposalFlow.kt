@@ -3,6 +3,7 @@ package negotiation.workflows
 import co.paralleluniverse.fibers.Suspendable
 import negotiation.contracts.ProposalAndTradeContract
 import negotiation.contracts.ProposalState
+import net.corda.core.contracts.Amount
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.UniqueIdentifier
 import net.corda.core.flows.*

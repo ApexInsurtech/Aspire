@@ -5,7 +5,7 @@ import com.template.model.Card
 import com.template.model.CardRankEnum.*
 import com.template.model.CardSuitEnum.*
 import com.template.model.RankingEnum.*
-import com.template.states.PlayerState
+import com.template.states.MemberState
 import junit.framework.TestCase
 import net.corda.core.identity.Party
 import org.junit.Assert.assertEquals
@@ -34,7 +34,7 @@ class RankingUtilTest {
     @Test
     fun testCheckRoyalFlush() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setRoyalFlush(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(ROYAL_FLUSH, player.rankingEnum)
@@ -47,7 +47,7 @@ class RankingUtilTest {
     @Test
     fun testCheckStraightFlush() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setStraightFlush(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(STRAIGHT_FLUSH, player.rankingEnum)
@@ -60,7 +60,7 @@ class RankingUtilTest {
     @Test
     fun testCheckFourOfAKind() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setFourOfAKind(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(FOUR_OF_A_KIND, player.rankingEnum)
@@ -73,7 +73,7 @@ class RankingUtilTest {
     @Test
     fun testCheckFullHouse() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setFullHouse(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(FULL_HOUSE, player.rankingEnum)
@@ -86,7 +86,7 @@ class RankingUtilTest {
     @Test
     fun testCheckFlush() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setFlush(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(FLUSH, player.rankingEnum)
@@ -99,7 +99,7 @@ class RankingUtilTest {
     @Test
     fun testCheckStraight() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setStraight(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(STRAIGHT, player.rankingEnum)
@@ -112,7 +112,7 @@ class RankingUtilTest {
     @Test
     fun testCheckThreeOfAKind() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setThreeOfAKind(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(THREE_OF_A_KIND, player.rankingEnum)
@@ -125,7 +125,7 @@ class RankingUtilTest {
     @Test
     fun testCheckTwoPair() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setTwoPair(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(TWO_PAIR, player.rankingEnum)
@@ -138,7 +138,7 @@ class RankingUtilTest {
     @Test
     fun testCheckOnePair() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setOnePair(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(ONE_PAIR, player.rankingEnum)
@@ -151,7 +151,7 @@ class RankingUtilTest {
     @Test
     fun testCheckHighCard() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setHighCard(player, tableCards)
         RankingUtil.checkRanking(player, tableCards)
         assertEquals(HIGH_CARD, player.rankingEnum)
@@ -164,7 +164,7 @@ class RankingUtilTest {
     @Test
     fun testIsRoyalFlush() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setRoyalFlush(player, tableCards)
 
         val royalFlushList = ArrayList<Card>()
@@ -179,7 +179,7 @@ class RankingUtilTest {
     @Test
     fun testIsRoyalFlushNotSequence() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(CLUBS, JACK), Card(CLUBS, CARD_10))
 
         tableCards.add(Card(CLUBS, QUEEN))
@@ -198,7 +198,7 @@ class RankingUtilTest {
     @Test
     fun testIsNotRoyalFlushNotSameSuit() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(CLUBS, ACE), Card(HEARTS, CARD_10))
 
         tableCards.add(Card(CLUBS, CARD_2))
@@ -211,7 +211,7 @@ class RankingUtilTest {
     @Test
     fun testIsStraightFlush() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setStraightFlush(player, tableCards)
 
         val straightFlushList = ArrayList<Card>()
@@ -226,7 +226,7 @@ class RankingUtilTest {
     @Test
     fun testIsStraightFlushNotSequence() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(CLUBS, CARD_2), Card(CLUBS, CARD_3))
 
         tableCards.add(Card(CLUBS, CARD_4))
@@ -239,7 +239,7 @@ class RankingUtilTest {
     @Test
     fun testIsNotStraightFlushNoSameSuit() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(CLUBS, CARD_2), Card(CLUBS, CARD_3))
 
         tableCards.add(Card(CLUBS, CARD_4))
@@ -252,7 +252,7 @@ class RankingUtilTest {
     @Test
     fun testIsFourOfAKind() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setFourOfAKind(player, tableCards)
 
         val fourOfAKindList = ArrayList<Card>()
@@ -268,7 +268,7 @@ class RankingUtilTest {
     @Test
     fun testIsNotFourOfAKind() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_10))
 
         tableCards.add(Card(CLUBS, CARD_10))
@@ -281,7 +281,7 @@ class RankingUtilTest {
     @Test
     fun testIsFullHouse() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setFullHouse(player, tableCards)
 
         val fullHouseList = ArrayList<Card>()
@@ -305,7 +305,7 @@ class RankingUtilTest {
         val cardTwo2 = Card(HEARTS, JACK)
 
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(cardThree3, cardTwo2)
 
         tableCards.add(cardTwo1)
@@ -319,7 +319,7 @@ class RankingUtilTest {
     @Test
     fun testIsFlush() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setFlush(player, tableCards)
 
         val flushList = ArrayList<Card>()
@@ -334,19 +334,19 @@ class RankingUtilTest {
     @Test
     fun testIsNotFlush() {
         val tableCards = ArrayList<Card>()
-        val playerState: PlayerState = PlayerState(party = mockParty, dealer = mockParty)
-        playerState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, CARD_10))
+        val memberState: MemberState = MemberState(party = mockParty, moderator = mockParty)
+        memberState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, CARD_10))
         tableCards.add(Card(HEARTS, CARD_2))
         tableCards.add(Card(CLUBS, KING))
         tableCards.add(Card(CLUBS, ACE))
 
-        assertNull(RankingUtil.getFlush(playerState, tableCards))
+        assertNull(RankingUtil.getFlush(memberState, tableCards))
     }
 
     @Test
     fun testIsStraight() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setStraight(player, tableCards)
 
         val straightList = ArrayList<Card>()
@@ -361,7 +361,7 @@ class RankingUtilTest {
     @Test
     fun testIsNotStraight() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(DIAMONDS, CARD_2), Card(CLUBS, CARD_3))
 
         tableCards.add(Card(CLUBS, CARD_8))
@@ -374,7 +374,7 @@ class RankingUtilTest {
     @Test
     fun testIsThreeOfAKind() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setThreeOfAKind(player, tableCards)
 
         val listThreeOfAKind = ArrayList<Card>()
@@ -390,7 +390,7 @@ class RankingUtilTest {
     @Test
     fun testIsNotThreeOfAKind() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_10))
 
         tableCards.add(Card(CLUBS, CARD_2))
@@ -403,7 +403,7 @@ class RankingUtilTest {
     @Test
     fun testIsTwoPair() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setTwoPair(player, tableCards)
 
         val fullHouseList = ArrayList<Card>()
@@ -426,7 +426,7 @@ class RankingUtilTest {
         val cardTwo2 = Card(HEARTS, JACK)
 
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(cardThree3, cardTwo2)
 
         tableCards.add(cardTwo1)
@@ -440,7 +440,7 @@ class RankingUtilTest {
     @Test
     fun testIsOnePair() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         setOnePair(player, tableCards)
 
         val listOnePair = ArrayList<Card>()
@@ -454,7 +454,7 @@ class RankingUtilTest {
     @Test
     fun testIsNotOnePair() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(DIAMONDS, CARD_2), Card(CLUBS, CARD_10))
 
         tableCards.add(Card(CLUBS, CARD_3))
@@ -467,7 +467,7 @@ class RankingUtilTest {
     @Test
     fun testGetHighCardRepeatedCards() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         val fourCard = Card(CLUBS, CARD_4)
         player.myCards = listOf(fourCard, fourCard)
 
@@ -481,7 +481,7 @@ class RankingUtilTest {
     @Test
     fun testGetHighCardAce() {
         val tableCards = ArrayList<Card>()
-        val player = PlayerState(party = mockParty, dealer = mockParty)
+        val player = MemberState(party = mockParty, moderator = mockParty)
         player.myCards = listOf(Card(HEARTS, CARD_9), Card(SPADES, CARD_7))
 
         val aceCard = Card(CLUBS, ACE)
@@ -493,78 +493,78 @@ class RankingUtilTest {
         return list1.containsAll(list2) && list1.size == list2.size
     }
 
-    private fun setRoyalFlush(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, JACK))
+    private fun setRoyalFlush(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, JACK))
 
         tableCards.add(Card(CLUBS, QUEEN))
         tableCards.add(Card(CLUBS, KING))
         tableCards.add(Card(CLUBS, ACE))
     }
 
-    private fun setStraightFlush(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(CLUBS, CARD_2), Card(CLUBS, CARD_3))
+    private fun setStraightFlush(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(CLUBS, CARD_2), Card(CLUBS, CARD_3))
 
         tableCards.add(Card(CLUBS, CARD_4))
         tableCards.add(Card(CLUBS, CARD_5))
         tableCards.add(Card(CLUBS, CARD_6))
     }
 
-    private fun setFourOfAKind(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_10))
+    private fun setFourOfAKind(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_10))
 
         tableCards.add(Card(CLUBS, CARD_10))
         tableCards.add(Card(CLUBS, KING))
         tableCards.add(Card(HEARTS, CARD_10))
     }
 
-    private fun setFullHouse(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(CLUBS, CARD_10), Card(HEARTS, JACK))
+    private fun setFullHouse(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(CLUBS, CARD_10), Card(HEARTS, JACK))
 
         tableCards.add(Card(CLUBS, JACK))
         tableCards.add(Card(HEARTS, CARD_10))
         tableCards.add(Card(CLUBS, CARD_10))
     }
 
-    private fun setFlush(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, CARD_3))
+    private fun setFlush(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, CARD_3))
 
         tableCards.add(Card(CLUBS, CARD_2))
         tableCards.add(Card(CLUBS, KING))
         tableCards.add(Card(CLUBS, ACE))
     }
 
-    private fun setStraight(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(DIAMONDS, CARD_4), Card(CLUBS, CARD_5))
+    private fun setStraight(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(DIAMONDS, CARD_4), Card(CLUBS, CARD_5))
 
         tableCards.add(Card(CLUBS, CARD_2))
         tableCards.add(Card(HEARTS, CARD_3))
         tableCards.add(Card(SPADES, CARD_6))
     }
 
-    private fun setThreeOfAKind(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(CLUBS, CARD_10), Card(SPADES, CARD_10))
+    private fun setThreeOfAKind(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(CLUBS, CARD_10), Card(SPADES, CARD_10))
         tableCards.add(Card(SPADES, ACE))
         tableCards.add(Card(HEARTS, CARD_10))
         tableCards.add(Card(HEARTS, CARD_2))
     }
 
-    private fun setTwoPair(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, JACK))
+    private fun setTwoPair(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(CLUBS, CARD_10), Card(CLUBS, JACK))
 
         tableCards.add(Card(SPADES, CARD_10))
         tableCards.add(Card(HEARTS, JACK))
     }
 
-    private fun setOnePair(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_10))
+    private fun setOnePair(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_10))
 
         tableCards.add(Card(CLUBS, CARD_2))
         tableCards.add(Card(CLUBS, KING))
         tableCards.add(Card(CLUBS, ACE))
     }
 
-    private fun setHighCard(playerState: PlayerState, tableCards: MutableList<Card>) {
-        playerState.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_9))
+    private fun setHighCard(memberState: MemberState, tableCards: MutableList<Card>) {
+        memberState.myCards = listOf(Card(DIAMONDS, CARD_10), Card(CLUBS, CARD_9))
 
         tableCards.add(Card(CLUBS, CARD_2))
         tableCards.add(Card(CLUBS, KING))

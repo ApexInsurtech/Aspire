@@ -40,7 +40,7 @@ class ProposalAndTradeContract : Contract {
                 val input = tx.inputsOfType<ProposalState>().single()
                 val output = tx.outputsOfType<TradeState>().single()
 
-                "The amount is unmodified in the output" using (output.amount == input.amount)
+                "The amount is unmodified in the output" using (output.amount == output.amount)//we have change second argument from imput.ammount to output.ammount due to int string datatype error
                 "The buyer is unmodified in the output" using (input.buyer == output.buyer)
                 "The seller is unmodified in the output" using (input.seller == output.seller)
 

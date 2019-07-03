@@ -24,19 +24,19 @@ object GameSchemaV1 : MappedSchema(
             @Column(name = "linear_id")
             val linearId: UUID,
 
-            @Column(name = "dealer")
-            val dealer: AbstractParty,
+            @Column(name = "moderator")
+            val moderator: AbstractParty,
 
-            //Note: A temproary workaround could be that we support only two players
-            //TODO: net.corda.nodeapi.internal.persistence.HibernateConfigException: Could not create Hibernate configuration: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.poker.schema.GameSchemaV1$PersistentGameSchemaV1.players[java.lang.String]
+            //Note: A temproary workaround could be that we support only two members
+            //TODO: net.corda.nodeapi.internal.persistence.HibernateConfigException: Could not create Hibernate configuration: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.poker.schema.GameSchemaV1$PersistentGameSchemaV1.members[java.lang.String]
 //        @OneToMany(cascade = arrayOf(CascadeType.ALL), orphanRemoval = true)
-//        val players: Set<String>,
+//        val members: Set<String>,
 
-            @Column(name = "playerA")
-            val playerA: AbstractParty,
+            @Column(name = "memberA")
+            val memberA: AbstractParty,
 
-            @Column(name = "playerB")
-            val playerB: AbstractParty,
+            @Column(name = "memberB")
+            val memberB: AbstractParty,
 
             @OneToMany(cascade = arrayOf(CascadeType.ALL), orphanRemoval = true)
             val tableCards: Set<CardSchemaV1>,

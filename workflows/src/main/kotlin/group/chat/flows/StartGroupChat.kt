@@ -69,7 +69,7 @@ class StartGroupChat(val notary: Party) : FlowLogic<UniqueIdentifier>() {
 
         // Step 3. Building.
         progressTracker.currentStep = BUILDING
-        val groupChatState: GroupChatState = GroupChatState(UniqueIdentifier(), dealer, emptyList(), deck.linearId, emptyList(), RoundEnum.Started, 0)
+        val groupChatState: GroupChatState = GroupChatState(UniqueIdentifier(), dealer, emptyList(), deck.linearId, emptyList(), RoundEnum.Started, "")
         val txCommand = Command(PokerContract.Commands.Start_GAME(), groupChatState.participants.map { it.owningKey })
         val txBuilder = TransactionBuilder(notary)
                 .addOutputState(groupChatState)

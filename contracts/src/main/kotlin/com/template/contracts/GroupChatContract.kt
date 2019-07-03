@@ -2,7 +2,7 @@ package com.template.contracts
 
 import com.template.model.RoundEnum
 import com.template.states.GroupChatState
-import com.template.states.PlayerState
+import com.template.states.MemberState
 import net.corda.core.contracts.*
 import net.corda.core.transactions.LedgerTransaction
 
@@ -34,10 +34,10 @@ class PokerContract : Contract {
                     "The single output is of type Game state" using (tx.outputsOfType<GroupChatState>().size == 1)
                     "There is exactly one command" using (tx.commands.size == 1)
                     val output = tx.outputsOfType<GroupChatState>().single()
-                    "The starter is a required signer/dealer" using (command.signers.contains(output.dealer.owningKey))
+                    "The starter is a required signer/dealer" using (command.signers.contains(output.moderator.owningKey))
                     "The table cards are empty" using (output.tableCards.isEmpty())
-                    "Bet amount is zero" using (output.betAmount == 0)
-                    "Players are empty" using (output.players.isEmpty())
+                    "Message cannot be empty " using (output.betAmount.length < 1)
+                    "Players are empty" using (output.members.isEmpty())
                     "Round is started" using (output.rounds.equals(RoundEnum.Started))
                     "Winner is not there yet" using (output.winner == null)
                 }
@@ -51,9 +51,9 @@ class PokerContract : Contract {
                     "The input should be a GroupChatState" using (tx.inputStates.first() is GroupChatState)
                     "Input Round is started" using ((tx.inputStates.first() as GroupChatState).rounds.equals(RoundEnum.Started))
                     "There should be two outputs" using (tx.outputStates.size ==2)
-                    "The two outputs are a Game State and a Player State" using  (tx.groupStates(GroupChatState::deckIdentifier).size ==1 && tx.groupStates(PlayerState::party).size ==1)
+                    "The two outputs are a Game State and a Player State" using  (tx.groupStates(GroupChatState::deckIdentifier).size ==1 && tx.groupStates(MemberState::party).size ==1)
                     val outputGameState = tx.outputsOfType<GroupChatState>().single()
-                    val outputPlayerState = tx.outputsOfType<PlayerState>().single()
+                    val outputPlayerState = tx.outputsOfType<MemberState>().single()
                     "Output game state Round is started" using (outputGameState.rounds.equals(RoundEnum.Started))
                     "the player cards are empty" using (outputPlayerState.myCards.isEmpty())
                 }

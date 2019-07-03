@@ -24,7 +24,7 @@ class StartGroupChatTests {
             TestCordapp.findCordapp("com.poker.flows")
     )))
     private val notary = network.createNode()
-    private val dealer = network.createNode()
+    private val moderator = network.createNode()
 
 
 /*    init {
@@ -42,12 +42,12 @@ class StartGroupChatTests {
     @Test
     fun `Starting the game should return a UID and all its state values are initialized`() {
         val notaryNode = network.defaultNotaryNode.info.legalIdentities.first()
-        val flow = dealer.startFlow(StartGroupChat(notaryNode)).toCompletableFuture()
+        val flow = moderator.startFlow(StartGroupChat(notaryNode)).toCompletableFuture()
         network.runNetwork()
         val uid = flow.getOrThrow()
         log.info("game id: $uid")
         assertNotNull(uid.id)
-        val vault = dealer.services.vaultService.queryBy<GroupChatState>()
+        val vault = moderator.services.vaultService.queryBy<GroupChatState>()
         assertTrue(vault.states.size == 1)
         val stateAndRef = vault.states.first()
         assertTrue(stateAndRef.state.notary == notaryNode)

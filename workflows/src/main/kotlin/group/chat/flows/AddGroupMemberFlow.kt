@@ -3,7 +3,7 @@ package com.template.flows
 import co.paralleluniverse.fibers.Suspendable
 import com.template.contracts.PokerContract
 import com.template.states.GroupChatState
-import com.template.states.PlayerState
+import com.template.states.MemberState
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.UniqueIdentifier
 import net.corda.core.contracts.requireThat
@@ -20,7 +20,7 @@ import java.util.*
 // *********
 @InitiatingFlow
 @StartableByRPC
-class AddPlayerFlow(val gameID: String, val player: Party) : FlowLogic<UniqueIdentifier>() {
+class AddGroupMemberFlow(val gameID: String, val member: Party) : FlowLogic<UniqueIdentifier>() {
     /**
      * Tracks progress throughout the flows call execution.
      */
@@ -56,18 +56,18 @@ class AddPlayerFlow(val gameID: String, val player: Party) : FlowLogic<UniqueIde
         progressTracker.currentStep = VALIDATING
         val gameStateRef = this.serviceHub.vaultService.queryBy(GroupChatState::class.java, QueryCriteria.LinearStateQueryCriteria(linearId = listOf(UniqueIdentifier(id = UUID.fromString(gameID))))).states.first()
         val gameState = gameStateRef.state.data
-        val playerStateState: PlayerState = PlayerState(party = player, dealer = gameState.dealer)
+        val memberStateState: MemberState = MemberState(party = member, moderator = gameState.moderator)
         val notary = this.serviceHub.networkMapCache.notaryIdentities.first()
 
         // Step 2. Building.
         progressTracker.currentStep = BUILDING
-        val newGameState = gameState.addPlayer(player)
-        val currentParticipants = gameState.participants.map { it.owningKey } + player.owningKey
+        val newGameState = gameState.addPlayer(member)
+        val currentParticipants = gameState.participants.map { it.owningKey } + member.owningKey
         val txCommand = Command(PokerContract.Commands.ADD_PLAYER(), currentParticipants)
         val txBuilder = TransactionBuilder(notary)
                 .addInputState(gameStateRef)
                 .addOutputState(newGameState)
-                .addOutputState(playerStateState)
+                .addOutputState(memberStateState)
                 .addCommand(txCommand)
         //  .setTimeWindow(serviceHub.clock.instant(), 5.minutes)
         txBuilder.verify(serviceHub)
@@ -78,18 +78,18 @@ class AddPlayerFlow(val gameID: String, val player: Party) : FlowLogic<UniqueIde
 
         // Step 4. Get the counter-party (Players) signature.
         progressTracker.currentStep = COLLECTING
-        val otherPartySessions = newGameState.players.map { initiateFlow(it) }
+        val otherPartySessions = newGameState.members.map { initiateFlow(it) }
         val fullySignedTx = subFlow(CollectSignaturesFlow(dealerSignedTx, otherPartySessions.toSet()))
 
         // Step 6. Finalise the transaction.
         progressTracker.currentStep = FINALISING
         subFlow(FinalityFlow(fullySignedTx, otherPartySessions.toSet()))
-        return playerStateState.linearId
+        return memberStateState.linearId
     }
 
 }
 
-@InitiatedBy(AddPlayerFlow::class)
+@InitiatedBy(AddGroupMemberFlow::class)
 class AddPlayerAcceptor(val otherPartySession: FlowSession) : FlowLogic<SignedTransaction>() {
     @Suspendable
     override fun call(): SignedTransaction {

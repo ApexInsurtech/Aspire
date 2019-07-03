@@ -8,7 +8,7 @@ import com.template.model.RoundEnum
 import com.template.model.RoundEnum.*
 import com.template.states.Deck
 import com.template.states.GroupChatState
-import com.template.states.PlayerState
+import com.template.states.MemberState
 import com.template.util.GameUtil
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.StateAndRef
@@ -67,21 +67,21 @@ class PlayFLow(val gameID: String, val round: String) : FlowLogic<Unit>() {
         val notary = this.serviceHub.networkMapCache.notaryIdentities.first()
         val oldGameStateRef = this.serviceHub.vaultService.queryBy(GroupChatState::class.java, QueryCriteria.LinearStateQueryCriteria(linearId = listOf(UniqueIdentifier(id = UUID.fromString(gameID))))).states.first()
         val oldGroupChatState: GroupChatState = oldGameStateRef.state.data
-        val oldPlayerStateRefList = mutableListOf<StateAndRef<PlayerState>>()
-        val players = oldGroupChatState.players
+        val oldPlayerStateRefList = mutableListOf<StateAndRef<MemberState>>()
+        val players = oldGroupChatState.members
         val roundEnum = RoundEnum.valueOf(round)
         val oldDeckStateRef = this.serviceHub.vaultService.queryBy(Deck::class.java, QueryCriteria.LinearStateQueryCriteria(linearId = listOf(oldGroupChatState.deckIdentifier))).states.first()
         val newDeckState = oldDeckStateRef.state.data.copy()
         var newGameState = oldGroupChatState.copy(rounds = roundEnum)
-        val newPlayerStates = mutableListOf<PlayerState>()
-        val oldPlayerStates = mutableListOf<PlayerState>()
+        val newPlayerStates = mutableListOf<MemberState>()
+        val oldPlayerStates = mutableListOf<MemberState>()
         val txBuilder = TransactionBuilder(notary)
 
         // Step 2. Building.
         progressTracker.currentStep = BUILDING
-        //Create a new copy of PlayerState state for every player state
+        //Create a new copy of MemberState state for every player state
         players.forEach {
-            val oldPlayerStateRef = this.serviceHub.vaultService.queryBy(PlayerState::class.java).states.filter { playerstateref -> playerstateref.state.data.party == it }.first()
+            val oldPlayerStateRef = this.serviceHub.vaultService.queryBy(MemberState::class.java).states.filter { playerstateref -> playerstateref.state.data.party == it }.first()
             val oldPlayerState = oldPlayerStateRef.state.data
             oldPlayerStateRefList.add(oldPlayerStateRef)
             oldPlayerStates.add(oldPlayerState)
@@ -144,7 +144,7 @@ class PlayFLow(val gameID: String, val round: String) : FlowLogic<Unit>() {
 
         // Step 4. Get the counter-party (Players) signature.
         progressTracker.currentStep = COLLECTING
-        val otherPartySessions = newGameState.players.map { initiateFlow(it) }
+        val otherPartySessions = newGameState.members.map { initiateFlow(it) }
         val fullySignedTx = subFlow(CollectSignaturesFlow(dealerSignedTx, otherPartySessions.toSet()))
 
         // Step 6. Finalise the transaction.

@@ -14,27 +14,28 @@ import java.time.LocalDateTime
 @CordaSerializable
 data class GroupChatState(
         override val linearId: UniqueIdentifier,
-        val dealer: Party,
-        val players: List<Party>,
+        val moderator: Party,
+        val members: List<Party>,
         val deckIdentifier: UniqueIdentifier,
         var tableCards: List<Card>,
         var rounds: RoundEnum,
-        var betAmount: Int,
+        var betAmount: String,
         var winner: Party? = null,
         val lastChange: LocalDateTime = LocalDateTime.now()
 ) : LinearState {
 
-    override val participants: List<Party> get() = listOf(dealer) + players
+    override val participants: List<Party> get() = listOf(moderator) + members
 
-    fun addBetAmount(amount: Int) = copy(
-            betAmount = betAmount + amount,
+    fun addBetAmount(amount: String) = copy(
+           // betAmount = betAmount + amount,
+            betAmount = amount,
             lastChange = LocalDateTime.now()
     )
 
-    fun addPlayer(player: Party) = copy(
-            players = players + player,
+    fun addPlayer(member: Party) = copy(
+            members = members + member,
             lastChange = LocalDateTime.now()
     )
-    //TODO: Deck Signature to be included in GroupChatState . There should be a way for players to ensure that the deck is not tampered
+    //TODO: Deck Signature to be included in GroupChatState . There should be a way for members to ensure that the deck is not tampered
     //TODO: lastchange to be updated on Rounds
 }
