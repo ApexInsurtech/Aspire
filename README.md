@@ -113,25 +113,23 @@ We can view all sent/recieived messages by querying our vault:
 
 To start a group chat, go to the Broker Node shell:
 
-1. START A GROUP CHAT
+## 1. START A GROUP CHAT
 
 flow start com.template.flows.StartGroupChat notary: "O=Notary, L=London, C=GB"
 
-2. ADD INSURER A:
+## 2. ADD INSURER A:
 
 flow start com.template.flows.AddGroupMemberFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", member: "O=InsurerA, L=New York, C=US"
 
-3. ADD INSURER B:
+## 3. ADD INSURER B:
 
 flow start com.template.flows.AddGroupMemberFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", member: "O=InsurerB, L=London, C=GB"
 
+## 4. ADD A MESSAGE TO THE GROUP CHAT:
 
-4. ADD A BET AMOUNT:
+flow start group.chat.flows.AddGroupMessageFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", message: "APEX INSURTECH ROCKS!"
 
-flow start group.chat.flows.AddGroupMessageFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", message: "APEX INSURTECH LTD"
-
-
-5. Execute a vault query to confirm that Insurer A has been added to the group chat:
+## 5. Execute a vault query to confirm that Insurer A has been added to the group chat:
 
 run vaultQuery contractStateType: com.template.states.GroupChatState
 
@@ -145,9 +143,9 @@ TO DO:
 - Claim State - This state will be used to handle claims
 - Payment - Corda Settler
 - ReInsurancePolicyState - A very simple variation of the Insurance Policy but inputs will the InsurancePolicyState
-- Spring Boot to create API's 
-- Basic Front End using above API's
-- 3 dashboard types, Broker, Insurer, Reinsurer
+- Spring Boot to create API's - FRONT END
+- Basic Front End using above API's - FRONT END
+- 3 dashboard types, Broker, Insurer, Reinsurer - FRONT END
 
 Deadline is end of July.  It may seem as a lot but I know exactly which cordapps we need to use to create our final cordapp.   
     
@@ -158,29 +156,3 @@ We can extend this base template to incorporate features from other cordapps.  T
 * Add state and contract definitions under `contracts/src/main/kotlin/`
 * Add flow definitions under `workflows/src/main/kotlin/`
 * Extend or replace the client and webserver under `clients/src/main/kotlin/`
----------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------
-#### TESTING:
-
-Running tests inside IntelliJ
-
-We recommend editing your IntelliJ preferences so that you use the Gradle runner - this means that the quasar utils
-plugin will make sure that some flags (like ``-javaagent`` - see below) are
-set for you.
-
-To switch to using the Gradle runner:
-
-* Navigate to ``File, Settings, Build, Execution, Deployment -> Build Tools -> Gradle -> Runner`` (or search for `runner`)
-  * Windows: this is in "Settings"
-  * MacOS: this is in "Preferences"
-* Set "Delegate IDE build/run actions to gradle" to true
-* Set "Run test using:" to "Gradle Test Runner"
-
-If you would prefer to use the built in IntelliJ JUnit test runner, you can run ``gradlew installQuasar`` which will
-copy your quasar JAR file to the lib directory. You will then need to specify ``-javaagent:lib/quasar.jar``
-and set the run directory to the project root directory for each test.
-
-
-For a guided example of how to extend this template, see the Hello, World! tutorial 
-[here](https://docs.corda.net/hello-world-introduction.html).
-
