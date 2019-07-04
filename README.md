@@ -109,24 +109,37 @@ We can view all sent/recieived messages by querying our vault:
 
 ```run vaultQuery contractStateType: net.corda.yo.YoState```
 
-NEXT STEPS:
+## GROUP CHAT:
 
-Our next objective is to allow one node to send a message to n number of nodes.  In order to do this we must create 2 new states:
+To start a group chat, go to the Broker Node shell:
 
-- Group Chat State - This will hold the participants of our group chat
-- Participant State - This will contain the message history for the node
+1. START A GROUP CHAT
 
-We must take this feature from the poker cordapp and integrate with ours.   
+flow start com.template.flows.StartGroupChat notary: "O=Notary, L=London, C=GB"
 
-Thoughts:
+2. ADD INSURER A:
 
-At the moment node to node message history is stored in a different state than group message history. Is there a better way? Bearing in mind that must always ensure privacy of node to node communications.
+flow start com.template.flows.AddGroupMemberFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", member: "O=InsurerA, L=New York, C=US"
+
+3. ADD INSURER B:
+
+flow start com.template.flows.AddGroupMemberFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", member: "O=InsurerB, L=London, C=GB"
+
+
+4. ADD A BET AMOUNT:
+
+flow start group.chat.flows.AddGroupMessageFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", message: "APEX INSURTECH LTD"
+
+
+5. Execute a vault query to confirm that Insurer A has been added to the group chat:
+
+run vaultQuery contractStateType: com.template.states.GroupChatState
 
 TO DO:
 
 - Negotiation - DONE
 - One to One Chat - DONE
-- Group Chat -  NEARLY DONE
+- Group Chat -  DONE
 - File Upload 
 - IoT - See Jira for Fuzz comments
 - Claim State - This state will be used to handle claims
@@ -135,9 +148,8 @@ TO DO:
 - Spring Boot to create API's 
 - Basic Front End using above API's
 - 3 dashboard types, Broker, Insurer, Reinsurer
-- Claims -  This will be 
 
-deadline is end of July.  It may seem as a lot but I know exactly which cordapps we need to use to create our final cordapp.   
+Deadline is end of July.  It may seem as a lot but I know exactly which cordapps we need to use to create our final cordapp.   
     
 # ADDING ADDITIONAL FUNCTIONS FROM OTHER CORDAPPS:
 
