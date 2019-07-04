@@ -79,7 +79,7 @@ Now go to InsurerC shell and execute the command below:
 
 This allow's us to view the proposal in Insurer C's vault.  This flow can be executed from any shell to allow us to view the vault contents.  Note down the linear ID (its near the top of the state data).
 
-MODIFYING A PROPOSAL:
+#### MODIFYING A PROPOSAL:
 
 Now assume that Insurer C wishes to modify the agreement and return it to the Broker, execute the following:
 
@@ -91,6 +91,7 @@ Again go back to Broker Shell and execute a vault query:
 
 ```run vaultQuery contractStateType: negotiation.contracts.ProposalState```
 
+#### ACCEPTING THE PROPOSAL
 Now we can see that the state has changed.  We can go back and forth as many times as we wish until we finally reach agreement.  Once the broker and Insurer C agree on an amount we execute the acceptance flow:
 
 ```flow start AcceptanceFlow$Initiator proposalId: xx```
@@ -109,27 +110,29 @@ We can view all sent/recieived messages by querying our vault:
 
 ```run vaultQuery contractStateType: net.corda.yo.YoState```
 
-## GROUP CHAT:
+#### GROUP CHAT:
 
 To start a group chat, go to the Broker Node shell:
 
-## 1. START A GROUP CHAT
+##### 1. START A GROUP CHAT
 
 flow start com.template.flows.StartGroupChat notary: "O=Notary, L=London, C=GB"
 
-## 2. ADD INSURER A:
+##### 2. ADD INSURER A:
 
 flow start com.template.flows.AddGroupMemberFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", member: "O=InsurerA, L=New York, C=US"
 
-## 3. ADD INSURER B:
+##### 3. ADD INSURER B:
 
 flow start com.template.flows.AddGroupMemberFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", member: "O=InsurerB, L=London, C=GB"
 
-## 4. ADD A MESSAGE TO THE GROUP CHAT:
+##### 4. ADD A MESSAGE TO THE GROUP CHAT:
 
 flow start group.chat.flows.AddGroupMessageFlow gameID: "d6786ae3-ee75-4e14-bf60-734d98fa6609", message: "APEX INSURTECH ROCKS!"
 
-## 5. Execute a vault query to confirm that Insurer A has been added to the group chat:
+##### 5. CHECK GROUP CHAT MESSAGES:
+ 
+ Execute a vault query to confirm that Insurer A has been added to the group chat:
 
 run vaultQuery contractStateType: com.template.states.GroupChatState
 
