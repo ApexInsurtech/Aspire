@@ -2,3 +2,8 @@
 /out
 /.gradle
 /.idea
+# Project exclude paths
+/clients/build/
+# Project exclude paths
+/contracts/build/
+/workflows/build/

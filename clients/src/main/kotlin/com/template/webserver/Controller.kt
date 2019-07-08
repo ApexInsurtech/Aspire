@@ -1,25 +1,33 @@
 package com.template.webserver
 
-import org.slf4j.LoggerFactory
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import net.corda.client.rpc.CordaRPCClient
+import net.corda.core.utilities.NetworkHostAndPort.Companion.parse
+import net.corda.core.utilities.loggerFor
 
 /**
- * Define your API endpoints here.
+ * Connects to a Corda node via RPC and performs RPC operations on the node.
+ *
+ * The RPC connection is configured using command line arguments.
  */
-@RestController
-@RequestMapping("/") // The paths for HTTP requests are relative to this base path.
-class Controller(rpc: NodeRPCConnection) {
+fun main(args: Array<String>) = Client().main(args)
 
+class Client {
     companion object {
-        private val logger = LoggerFactory.getLogger(RestController::class.java)
+        val logger = loggerFor<Client>()
     }
 
-    private val proxy = rpc.proxy
+    fun main(args: Array<String>) {
+        // Create an RPC connection to the node.
+        require(args.size == 3) { "Usage: Client <node address> <rpc username> <rpc password>" }
+        val nodeAddress = parse(args[0])
+        val rpcUsername = args[1]
+        val rpcPassword = args[2]
+        val client = CordaRPCClient(nodeAddress)
+        val proxy = client.start(rpcUsername, rpcPassword).proxy
 
-    @GetMapping(value = "/templateendpoint", produces = arrayOf("text/plain"))
-    private fun templateendpoint(): String {
-        return "Define an endpoint here."
+        // Interact with the node.
+        // For example, here we print the nodes on the network.
+        val nodes = proxy.networkMapSnapshot()
+        logger.info("{}", nodes)
     }
 }
