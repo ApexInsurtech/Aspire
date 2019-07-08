@@ -1,6 +1,6 @@
 package com.template
 
-import com.template.webserver.Client
+import com.template.Client
 import net.corda.client.rpc.CordaRPCClient
 import net.corda.core.utilities.NetworkHostAndPort.Companion.parse
 import net.corda.core.utilities.loggerFor
@@ -10,7 +10,7 @@ import net.corda.core.utilities.loggerFor
  *
  * The RPC connection is configured using command line arguments.
  */
-fun main(args: Array<String>) = com.template.webserver.Client().main(args)
+fun main(args: Array<String>) = com.template.Client().main(args)
 
 private class Client {
     companion object {

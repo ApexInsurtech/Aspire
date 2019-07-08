@@ -1,33 +1,51 @@
 package com.template.webserver
 
-import net.corda.client.rpc.CordaRPCClient
-import net.corda.core.utilities.NetworkHostAndPort.Companion.parse
-import net.corda.core.utilities.loggerFor
+import net.corda.core.contracts.ContractState
+import net.corda.core.messaging.vaultQueryBy
+import org.slf4j.LoggerFactory
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+import java.time.LocalDateTime
+import java.time.ZoneId
 
 /**
- * Connects to a Corda node via RPC and performs RPC operations on the node.
- *
- * The RPC connection is configured using command line arguments.
+ * A CorDapp-agnostic controller that exposes standard endpoints.
  */
-fun main(args: Array<String>) = Client().main(args)
+@RestController
+@RequestMapping("/") // The paths for GET and POST requests are relative to this base path.
+class StandardController(rpc: NodeRPCConnection) {
 
-class Client {
     companion object {
-        val logger = loggerFor<Client>()
+        private val logger = LoggerFactory.getLogger(RestController::class.java)
     }
 
-    fun main(args: Array<String>) {
-        // Create an RPC connection to the node.
-        require(args.size == 3) { "Usage: Client <node address> <rpc username> <rpc password>" }
-        val nodeAddress = parse(args[0])
-        val rpcUsername = args[1]
-        val rpcPassword = args[2]
-        val client = CordaRPCClient(nodeAddress)
-        val proxy = client.start(rpcUsername, rpcPassword).proxy
+    private val proxy = rpc.proxy
 
-        // Interact with the node.
-        // For example, here we print the nodes on the network.
-        val nodes = proxy.networkMapSnapshot()
-        logger.info("{}", nodes)
-    }
+    @GetMapping(value = ["/status"], produces = arrayOf("text/plain"))
+    private fun status() = "200"
+
+    @GetMapping(value = ["/servertime"], produces = arrayOf("text/plain"))
+    private fun serverTime() = LocalDateTime.ofInstant(proxy.currentNodeTime(), ZoneId.of("UTC")).toString()
+
+    @GetMapping(value = ["/addresses"], produces = arrayOf("text/plain"))
+    private fun addresses() = proxy.nodeInfo().addresses.toString()
+
+    @GetMapping(value = ["/identities"], produces = arrayOf("text/plain"))
+    private fun identities() = proxy.nodeInfo().legalIdentities.toString()
+
+    @GetMapping(value = ["/platformversion"], produces = arrayOf("text/plain"))
+    private fun platformVersion() = proxy.nodeInfo().platformVersion.toString()
+
+    @GetMapping(value = ["/peers"], produces = arrayOf("text/plain"))
+    private fun peers() = proxy.networkMapSnapshot().flatMap { it.legalIdentities }.toString()
+
+    @GetMapping(value = ["/notaries"], produces = arrayOf("text/plain"))
+    private fun notaries() = proxy.notaryIdentities().toString()
+
+    @GetMapping(value = ["/flows"], produces = arrayOf("text/plain"))
+    private fun flows() = proxy.registeredFlows().toString()
+
+    @GetMapping(value = ["/states"], produces = arrayOf("text/plain"))
+    private fun states() = proxy.vaultQueryBy<ContractState>().states.toString()
 }
