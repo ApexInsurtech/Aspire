@@ -86,7 +86,7 @@ class AddMessageFlow(val gameID: String, val message: String) : FlowLogic<Unit>(
 }
 
 @InitiatedBy(AddMessageFlow::class)
-class AcceptGroupChatFlow(val otherPartySession: FlowSession) : FlowLogic<SignedTransaction>() {
+class AcceptChatFlow(val otherPartySession: FlowSession) : FlowLogic<SignedTransaction>() {
     @Suspendable
     override fun call(): SignedTransaction {
         val signTransactionFlow = object : SignTransactionFlow(otherPartySession) {

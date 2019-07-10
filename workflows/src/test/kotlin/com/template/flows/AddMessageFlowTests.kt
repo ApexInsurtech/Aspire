@@ -3,7 +3,7 @@ package com.template.flows
 import assertk.assertThat
 import assertk.assertions.isEqualTo
 import com.template.states.ChatState
-import group.chat.flows.AcceptGroupChatFlow
+import group.chat.flows.AcceptChatFlow
 import group.chat.flows.AddMessageFlow
 import group.chat.flows.AddMemberFlow
 import group.chat.flows.AddPlayerAcceptor
@@ -34,7 +34,7 @@ class AddMessageFlowTests {
         listOf(memberA, memberB, moderator).forEach {
             it.registerInitiatedFlow(AddPlayerAcceptor::class.java)
 //            it.registerInitiatedFlow(PlayFlowResponder::class.java)
-            it.registerInitiatedFlow(AcceptGroupChatFlow::class.java)
+            it.registerInitiatedFlow(AcceptChatFlow::class.java)
         }
     }
 

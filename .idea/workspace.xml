@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="" />
+    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddMessageFlow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddMessageFlow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMessageFlowTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMessageFlowTests.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,31 +34,6 @@
       </state>
     </system>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>participants</find>
-      <find>ContractState</find>
-      <find>YoState</find>
-      <find>utx</find>
-      <find>SignedTransaction</find>
-      <find>YoFlow</find>
-      <find>progressTracker</find>
-      <find>poker</find>
-      <find>PokerContract</find>
-      <find>dealer</find>
-      <find>player</find>
-      <find>AddPlayerFlow</find>
-      <find>deckIdentifier</find>
-      <find>amount</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>template</replace>
-      <replace>moderator</replace>
-      <replace>members</replace>
-      <replace>member</replace>
-      <replace>AddGroupMemberFlow</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
@@ -73,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Material File Colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -133,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562765977222</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tidying up code">
+      <created>1562766141055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562766141055</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
