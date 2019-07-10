@@ -1,16 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="">
+    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="Added oracle">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/clients/com.template.Aspire.clients.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/clients/com.template.Aspire.clients.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.template.Aspire.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.template.Aspire.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/contracts/com.template.Aspire.contracts.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/contracts/com.template.Aspire.contracts.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/workflows/com.template.Aspire.workflows.integrationTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/workflows/com.template.Aspire.workflows.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/workflows/com.template.Aspire.workflows.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddMessageFlow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddMessageFlow.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMessageFlowTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMessageFlowTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Aspire-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Aspire-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/process-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/process-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/nodekeystore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/sslkeystore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/truststore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/corda.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/cordapps/contracts-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/cordapps/workflows-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/drivers/jolokia-jvm-1.6.0-agent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/logs/node-info-gen.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/network-parameters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/persistence.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/persistence.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/process-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB_node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/nodekeystore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/sslkeystore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/truststore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/corda.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/cordapps/contracts-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/cordapps/workflows-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/drivers/jolokia-jvm-1.6.0-agent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/logs/node-info-gen.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/network-parameters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/persistence.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/persistence.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/process-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC_node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/process-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/InsurerB_node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/InsurerC_node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/META-INF/clients.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/Client$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/Client$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/ClientKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/ClientKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Controller$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Controller$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/NodeRPCConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/NodeRPCConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/NodeRPCConnectionKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/NodeRPCConnectionKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/ServerKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/ServerKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Starter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/resources/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/resources/static/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/META-INF/contracts.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract$Commands$Initialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract$Commands$Initialize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract$Commands.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract$Commands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/DeckContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract$Commands$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract$Commands$Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract$Commands.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract$Commands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/TemplateContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/CardRankEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/CardRankEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/CardSuitEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/CardSuitEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/RankingEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/RankingEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/RoundEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/model/RoundEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/CardSchemaV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/CardSchemaV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchemaV1$PersistentGameSchemaV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchemaV1$PersistentGameSchemaV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchemaV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchemaV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/Deck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/MemberState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/MemberState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands$Accept.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands$Accept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands$Modify.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands$Modify.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands$Propose.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands$Propose.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Commands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/TradeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/TradeState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoContract$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoContract$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoContract$Send.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoContract$Send.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$CREATING.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$CREATING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$FINALISING.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$FINALISING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$SIGNING.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$SIGNING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$VERIFYING.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion$VERIFYING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlowResponder.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoFlowResponder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/net/corda/yo/YoState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/test/classes/META-INF/contracts.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/test/classes/com/template/contracts/ContractTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/test/classes/com/template/contracts/ContractTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/META-INF/workflows.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/META-INF/workflows.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow$Companion$BUILDING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow$Companion$COLLECTING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow$Companion$FINALISING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow$Companion$SIGNING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow$Companion$VALIDATING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerAcceptor$call$signTransactionFlow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerAcceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AcceptGroupChatFlow$call$signTransactionFlow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AcceptGroupChatFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow$Companion$BUILDING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow$Companion$COLLECTING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow$Companion$FINALISING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow$Companion$SIGNING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow$Companion$VALIDATING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/META-INF/workflows_integrationTest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest$node test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest$node test$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest$withDriver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest$withDriver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/META-INF/workflows.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$BUILDING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$BUILDING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$DECKING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$DECKING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$FINALISING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$FINALISING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$INITIALISING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$INITIALISING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$SIGNING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$SIGNING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/GameUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/GameUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil$getOrderedCardList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil$getOrderedCardList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AcceptGroupChatFlow$call$signTransactionFlow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AcceptGroupChatFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow$Initiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow$Initiator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow$Responder$call$signTransactionFlow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow$Responder$call$signTransactionFlow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow$Responder.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow$Responder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/AcceptanceFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow$Initiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow$Initiator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow$Responder$call$signTransactionFlow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow$Responder$call$signTransactionFlow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow$Responder.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow$Responder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ModificationFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Initiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Initiator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder$call$signTransactionFlow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder$call$signTransactionFlow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/META-INF/workflows.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/ContractTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/ContractTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/FlowTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/FlowTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/NodeDriverKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/NodeDriverKt$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/NodeDriverKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/NodeDriverKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/GameUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/GameUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/RankingUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/RankingUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -45,13 +277,19 @@
       </set>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="291" />
+    <option name="y" value="180" />
+    <option name="width" value="1149" />
+    <option name="height" value="861" />
+  </component>
   <component name="ProjectId" id="1Np23LwyHMRtSRLSg9JzdcxW8BR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/workflows/src/main/kotlin/service" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Material File Colors" />
   </component>
   <component name="RecentsManager">
@@ -63,10 +301,11 @@
       <recent name="group.chat" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/workflows/src/main/kotlin/service" />
+      <recent name="$PROJECT_DIR$/workflows/src/main/kotlin/clientnew" />
+      <recent name="$PROJECT_DIR$/workflows/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\Hafsa\Aspire\workflows\src\main\kotlin\group\chat\flows" />
-      <recent name="C:\Users\Hafsa\Aspire\workflows\src\main\kotlin\group\chat" />
-      <recent name="C:\Users\Hafsa\Aspire\contracts\src\main\kotlin\com\template" />
-      <recent name="C:\Users\Hafsa\Aspire\contracts\src\main\kotlin\com\template\states" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -135,10 +374,25 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tidying up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tidying up code" />
+    <MESSAGE value="Added oracle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added oracle" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
