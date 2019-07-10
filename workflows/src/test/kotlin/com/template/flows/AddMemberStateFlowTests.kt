@@ -1,6 +1,8 @@
 package com.template.flows
 
 import com.template.states.MemberState
+import group.chat.flows.AddMemberFlow
+import group.chat.flows.AddPlayerAcceptor
 import net.corda.core.node.services.queryBy
 import net.corda.core.utilities.getOrThrow
 import net.corda.core.utilities.loggerFor
@@ -46,7 +48,7 @@ class AddMemberStateFlowTests {
         log.info("game id: $gameUID")
         assertNotNull(gameUID.id)
 
-        val addPlayerFlow = moderator.startFlow(AddGroupMemberFlow(gameUID.id.toString(), memberA.info.legalIdentities.first())).toCompletableFuture()
+        val addPlayerFlow = moderator.startFlow(AddMemberFlow(gameUID.id.toString(), memberA.info.legalIdentities.first())).toCompletableFuture()
         network.runNetwork()
         val memberUID = addPlayerFlow.getOrThrow()
         assertNotNull(memberUID.id)

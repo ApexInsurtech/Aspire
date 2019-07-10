@@ -1,0 +1,8 @@
+
+# Project exclude paths
+/build/
+/contracts/build/
+/contracts/out/
+/contracts/out/production/classes/
+/workflows/out/
+/workflows/out/test/classes/

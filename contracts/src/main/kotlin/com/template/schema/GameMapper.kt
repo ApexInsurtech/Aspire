@@ -14,7 +14,7 @@ interface GameMapper     {
             Mapping(target = "rankingEnum", source = "rankingEnum"),
             Mapping(target = "rankingList", source = "rankingList", qualifiedByName = ["toRankingList"]),
             Mapping(target = "highCard", source = "highCard", qualifiedByName = ["toCardSchemaV1"]))
-    fun toPersistentGameSchemaV1(gameState: GroupChatState): GameSchemaV1.PersistentGameSchemaV1
+    fun toPersistentGameSchemaV1(gameState: ChatState): GameSchemaV1.PersistentGameSchemaV1
 
     @Named("toCardSchemaV1Set")
     fun toCardSchemaV1Set(cards: Array<Card?>) : Set<CardSchemaV1>

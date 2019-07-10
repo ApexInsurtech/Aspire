@@ -1,13 +1,11 @@
-2019-07-03 23:26:06,576 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2019-07-03 23:26:06,580 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
 
-   ______               __
+[91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         Cats spend two thirds of their lives sleeping
-/ /___  /_/ / /  / /_/ / /_/ /          and the other third making viral videos.
-\____/     /_/   \__,_/\__,_/
+ / /     __  / ___/ __  / __ `/         [94mI won $3M on the lottery so I donated a quarter
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mof it to charity. Now I have $2,999,999.75.
+[91m\____/     /_/   \__,_/\__,_/[m
 
---- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
+[99;1m--- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
 
-
-Logs can be found in                    : C:\Users\Hafsa\Aspire\build\nodes\InsurerC\logs
+[m
+Logs can be found in                    : /home/john/IdeaProjects/Aspire/build/nodes/InsurerC/logs

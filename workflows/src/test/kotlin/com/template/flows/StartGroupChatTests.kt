@@ -1,7 +1,7 @@
 package com.template.flows
 
 import com.template.model.RoundEnum
-import com.template.states.GroupChatState
+import com.template.states.ChatState
 import net.corda.core.node.services.queryBy
 import net.corda.core.utilities.getOrThrow
 import net.corda.core.utilities.loggerFor
@@ -47,7 +47,7 @@ class StartGroupChatTests {
         val uid = flow.getOrThrow()
         log.info("game id: $uid")
         assertNotNull(uid.id)
-        val vault = moderator.services.vaultService.queryBy<GroupChatState>()
+        val vault = moderator.services.vaultService.queryBy<ChatState>()
         assertTrue(vault.states.size == 1)
         val stateAndRef = vault.states.first()
         assertTrue(stateAndRef.state.notary == notaryNode)

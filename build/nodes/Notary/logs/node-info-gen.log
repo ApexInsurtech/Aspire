@@ -1,13 +1,11 @@
-2019-07-03 23:26:15,686 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2019-07-03 23:26:15,695 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
 
-   ______               __
+[91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         Regular naps prevent old age, especially
-/ /___  /_/ / /  / /_/ / /_/ /          if you take them whilst driving.
-\____/     /_/   \__,_/\__,_/
+ / /     __  / ___/ __  / __ `/         [94mMoses had the first tablet that
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mcould connect to the cloud.
+[91m\____/     /_/   \__,_/\__,_/[m
 
---- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
+[99;1m--- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
 
-
-Logs can be found in                    : C:\Users\Hafsa\Aspire\build\nodes\Notary\logs
+[m
+Logs can be found in                    : /home/john/IdeaProjects/Aspire/build/nodes/Notary/logs

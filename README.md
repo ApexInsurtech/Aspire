@@ -85,7 +85,7 @@ flow start com.template.flows.StartGroupChat notary: "O=Notary, L=London, C=GB"
 
 We need the liner ID or game ID:
 
-run vaultQuery contractStateType: com.template.states.GroupChatState
+run vaultQuery contractStateType: com.template.states.ChatState
 
 
 flow start com.template.flows.AddGroupMemberFlow gameID: "ca316f3c-9f54-4b76-8065-59bcc2458e67", member: "O=InsurerA, L=New York, C=US"
@@ -102,7 +102,7 @@ flow start group.chat.flows.AddGroupMessageFlow gameID: "ca316f3c-9f54-4b76-8065
 
 Execute a vault query from relevant nodes to confirm that message has been added to the group chat:
 
-run vaultQuery contractStateType: com.template.states.GroupChatState
+run vaultQuery contractStateType: com.template.states.ChatState
 
 TO DO:
 

@@ -1,10 +1,10 @@
 package com.template.flows
 
 import co.paralleluniverse.fibers.Suspendable
-import com.template.contracts.PokerContract
+import com.template.contracts.ChatContract
 import com.template.model.RoundEnum
 import com.template.states.Deck
-import com.template.states.GroupChatState
+import com.template.states.ChatState
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.UniqueIdentifier
 import net.corda.core.flows.FinalityFlow
@@ -59,7 +59,7 @@ class StartGroupChat(val notary: Party) : FlowLogic<UniqueIdentifier>() {
         progressTracker.currentStep = DECKING
         val deck: Deck = Deck(dealer)
         deck.shuffle()
-        val txInternalCommand = Command(PokerContract.Commands.Start_GAME(), dealer.owningKey)
+        val txInternalCommand = Command(ChatContract.Commands.Start_GAME(), dealer.owningKey)
         val txInternalBuilder = TransactionBuilder(notary)
                 .addOutputState(deck)
                 .addCommand(txInternalCommand)
@@ -69,10 +69,10 @@ class StartGroupChat(val notary: Party) : FlowLogic<UniqueIdentifier>() {
 
         // Step 3. Building.
         progressTracker.currentStep = BUILDING
-        val groupChatState: GroupChatState = GroupChatState(UniqueIdentifier(), dealer, emptyList(), deck.linearId, emptyList(), RoundEnum.Started, "")
-        val txCommand = Command(PokerContract.Commands.Start_GAME(), groupChatState.participants.map { it.owningKey })
+        val chatState: ChatState = ChatState(UniqueIdentifier(), dealer, emptyList(), deck.linearId, emptyList(), RoundEnum.Started, "")
+        val txCommand = Command(ChatContract.Commands.Start_GAME(), chatState.participants.map { it.owningKey })
         val txBuilder = TransactionBuilder(notary)
-                .addOutputState(groupChatState)
+                .addOutputState(chatState)
                 .addCommand(txCommand)
         // .setTimeWindow(serviceHub.clock.instant(), 5.minutes)
         txBuilder.verify(serviceHub)
@@ -85,7 +85,7 @@ class StartGroupChat(val notary: Party) : FlowLogic<UniqueIdentifier>() {
         // Step 5. Finalise the transaction.
         progressTracker.currentStep = FINALISING
         subFlow(FinalityFlow(dealerSignedTx, emptyList()))
-        return groupChatState.linearId
+        return chatState.linearId
     }
 }
 

@@ -1,13 +1,11 @@
-2019-07-03 23:26:15,534 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2019-07-03 23:26:15,538 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
 
-   ______               __
+[91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         Check your contracts carefully. The fine print
-/ /___  /_/ / /  / /_/ / /_/ /          is usually a clause for suspicion 
-\____/     /_/   \__,_/\__,_/
+ / /     __  / ___/ __  / __ `/         [94mSome bankers are generous ...
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mto a vault!  
+[91m\____/     /_/   \__,_/\__,_/[m
 
---- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
+[99;1m--- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
 
-
-Logs can be found in                    : C:\Users\Hafsa\Aspire\build\nodes\Broker\logs
+[m
+Logs can be found in                    : /home/john/IdeaProjects/Aspire/build/nodes/Broker/logs

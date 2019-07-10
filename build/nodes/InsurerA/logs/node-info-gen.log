@@ -1,13 +1,11 @@
-2019-07-03 23:26:06,768 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2019-07-03 23:26:06,771 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
 
-   ______               __
+[91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         I got a universal remote control yesterday.
-/ /___  /_/ / /  / /_/ / /_/ /          I thought, this changes everything.
-\____/     /_/   \__,_/\__,_/
+ / /     __  / ___/ __  / __ `/         [94mIt's not who you know, it's who you know
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mknows what you know you know.
+[91m\____/     /_/   \__,_/\__,_/[m
 
---- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
+[99;1m--- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
 
-
-Logs can be found in                    : C:\Users\Hafsa\Aspire\build\nodes\InsurerA\logs
+[m
+Logs can be found in                    : /home/john/IdeaProjects/Aspire/build/nodes/InsurerA/logs

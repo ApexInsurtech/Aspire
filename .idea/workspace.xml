@@ -1,103 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="">
+    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="Tidying up code">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$Start_GAME.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$Start_GAME.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/schema/GameSchemaV1$PersistentGameSchemaV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/schema/GameSchemaV1$PersistentGameSchemaV1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/GroupChatState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/GroupChatState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/PlayerState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/negotiation/contracts/ProposalAndTradeContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/negotiation/contracts/ProposalAndTradeContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Aspire-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Aspire-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/artemis/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/artemis/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/artemis/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/artemis/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/artemis/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/brokers/rpc/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/brokers/rpc/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/brokers/rpc/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/brokers/rpc/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/brokers/rpc/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/corda.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/corda.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/logs/node-DESKTOP-S3KK2KJ.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/process-id" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/process-id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/artemis/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/artemis/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/artemis/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/artemis/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/artemis/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/brokers/rpc/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/brokers/rpc/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/brokers/rpc/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/brokers/rpc/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/brokers/rpc/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/corda.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/corda.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-DESKTOP-S3KK2KJ.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/process-id" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/process-id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/artemis/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/artemis/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/artemis/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/artemis/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/artemis/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/brokers/rpc/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/brokers/rpc/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/brokers/rpc/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/brokers/rpc/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/brokers/rpc/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/corda.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/corda.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/logs/node-DESKTOP-S3KK2KJ.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerB/process-id" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerB/process-id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/artemis/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/artemis/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/artemis/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/artemis/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/artemis/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/brokers/rpc/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/brokers/rpc/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/brokers/rpc/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/brokers/rpc/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/brokers/rpc/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/corda.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/corda.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/logs/node-DESKTOP-S3KK2KJ.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerC/process-id" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerC/process-id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-1B2784DDFBBDBEEAF7B3808A449035A4DF3F18928C926EF2E7A2415ECDD7C8E3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-813136DFE58A9F6B55774B469ECC8717476F51B79B5E6B5AEAC9F9E93FA26427" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/artemis/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/artemis/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/artemis/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/artemis/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/artemis/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/brokers/rpc/bindings/activemq-bindings-1.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/brokers/rpc/bindings/activemq-bindings-2.bindings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/brokers/rpc/journal/activemq-data-1.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/brokers/rpc/journal/activemq-data-2.amq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/brokers/rpc/journal/server.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/corda.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/corda.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/logs/node-DESKTOP-S3KK2KJ.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/process-id" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/process-id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/runnodes" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/runnodes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/runnodes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/runnodes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/META-INF/clients.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/Client$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/ClientKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Controller$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/NodeRPCConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/NodeRPCConnectionKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/ServerKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/classes/com/template/webserver/Starter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/resources/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/resources/static/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/out/production/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clients/out/production/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/kotlin/com/template/webserver/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/kotlin/com/template/webserver/Controller.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$ADD_PLAYER.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$BET.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$DEALT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$FLOPPED.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$RIVERED.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$Start_GAME.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$TURNED.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands$WINNER.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Commands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/contracts/PokerContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/GroupChatState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/MemberState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/MemberState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts/build/kotlin/contracts01jar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/kotlin/contracts01jar-classes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$Start_GAME.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$Start_GAME.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchemaV1$PersistentGameSchemaV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/schema/GameSchemaV1$PersistentGameSchemaV1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/GroupChatState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/GroupChatState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/PlayerState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/negotiation/contracts/ProposalAndTradeContract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/GroupChatContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/GroupChatContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameSchema.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameSchema.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GroupChatState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GroupChatState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/PlayerState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/MemberState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ProposalState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ProposalState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerAcceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerAcceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow$Companion$BUILDING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow$Companion$COLLECTING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow$Companion$FINALISING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow$Companion$SIGNING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow$Companion$VALIDATING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddPlayerFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER$verify$1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$ADD_PLAYER.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$BET.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$DEALT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$FLOPPED.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$RIVERED.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$Start_GAME.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$TURNED.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands$WINNER.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Commands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/contracts/PokerContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/GroupChatState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/MemberState.class" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/out/production/classes/com/template/states/MemberState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/test/classes/META-INF/contracts.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/out/test/classes/com/template/contracts/ContractTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/GroupChatContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/ChatContract.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GroupChatState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ChatState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/MemberState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/MemberState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/AddGroupMemberFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$Companion$BUILDING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$Companion$COLLECTING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$Companion$FINALISING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$Companion$SIGNING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$Companion$VALIDATING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFLow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFlowResponder$call$signTransactionFlow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/PlayFlowResponder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/StartGroupChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/StartGroupChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/util/GameUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/util/GameUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/util/RankingUtil$getOrderedCardList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/util/RankingUtil$getOrderedCardList$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/util/RankingUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/util/RankingUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow$Initiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow$Initiator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow$Responder$call$signTransactionFlow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow$Responder$call$signTransactionFlow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow$Responder.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow$Responder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/negotiation/workflows/ProposalFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/group/chat/flows/AddGroupMessageFlow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerAcceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerAcceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow$Companion$BUILDING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow$Companion$COLLECTING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow$Companion$FINALISING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow$Companion$SIGNING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow$Companion$VALIDATING.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/META-INF/workflows_integrationTest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest$node test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest$withDriver$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/integrationTest/classes/com/template/DriverBasedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow$Companion$BUILDING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow$Companion$COLLECTING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow$Companion$FINALISING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow$Companion$SIGNING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow$Companion$VALIDATING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddGroupMemberFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerAcceptor$call$signTransactionFlow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/AddPlayerAcceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$Companion$BUILDING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$Companion$COLLECTING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$Companion$FINALISING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$Companion$SIGNING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$Companion$VALIDATING.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFLow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFlowResponder$call$signTransactionFlow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/PlayFlowResponder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/GameUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/GameUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil$getOrderedCardList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil$getOrderedCardList$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/util/RankingUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Initiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Initiator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder$call$signTransactionFlow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder$call$signTransactionFlow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow$Responder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/negotiation/workflows/ProposalFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddPlayerStateFlowTests$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddPlayerStateFlowTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/PlayFlowTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/PlayFlowTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/GameUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/GameUtilTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/RankingUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/RankingUtilTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/ProposalFlow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/ProposalFlow.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMemberFlow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMemberFlow.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/PlayFLow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/PlayFLow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AcceptGroupChatFlow$call$signTransactionFlow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AcceptGroupChatFlow$call$signTransactionFlow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AcceptGroupChatFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AcceptGroupChatFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$BUILDING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$BUILDING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$COLLECTING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$COLLECTING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$FINALISING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$FINALISING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$SIGNING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$SIGNING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$VALIDATING.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion$VALIDATING.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/classes/group/chat/flows/AddGroupMessageFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/META-INF/workflows.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/ContractTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/FlowTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/NodeDriverKt$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/NodeDriverKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddGroupMessageFlowTests$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddGroupMessageFlowTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/PlayFlowTests$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/PlayFlowTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/GameUtilTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/util/RankingUtilTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMemberFlow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddMemberFlow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMessageFlow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddMessageFlow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/PlayFLow.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGroupChat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGroupChat.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/GameUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/GameUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/RankingUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/RankingUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddPlayerStateFlowTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMemberStateFlowTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/PlayFlowTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/PlayFlowTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddGroupMessageFlowTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMessageFlowTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMemberStateFlowTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMemberStateFlowTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/PlayFlowTests.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/StartGroupChatTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/StartGroupChatTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/GameUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/GameUtilTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/RankingUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/RankingUtilTest.kt" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/clients/.gradle/" />
-    <ignored path="$PROJECT_DIR$/clients/build/" />
-    <ignored path="$PROJECT_DIR$/contracts/.gradle/" />
-    <ignored path="$PROJECT_DIR$/contracts/build/" />
-    <ignored path="$PROJECT_DIR$/workflows/.gradle/" />
-    <ignored path="$PROJECT_DIR$/workflows/build/" />
-    <ignored path="$PROJECT_DIR$/clients/out/" />
-    <ignored path="$PROJECT_DIR$/contracts/out/" />
-    <ignored path="$PROJECT_DIR$/workflows/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -107,109 +300,19 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Aspire" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGroupChat.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="71" column="149" selection-start-line="71" selection-start-column="149" selection-end-line="71" selection-end-column="149" />
-              <folding>
-                <element signature="e#28#673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GroupChatState.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-              <folding>
-                <element signature="e#29#404#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/GroupChatContract.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/DeckContract.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddGroupMessageFlowTests.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-              <folding>
-                <element signature="e#28#593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMessageFlow.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="60" column="57" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="57" />
-              <folding>
-                <element signature="e#26#613#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/ProposalFlow.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ProposalState.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="92" column="23" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="23" />
-              <folding>
-                <element signature="e#31#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/AcceptanceFlow.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -238,113 +341,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/FlowTests.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/Yo.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/RoundEnum.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameMapper.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/DeckContract.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/PokerContract.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/StartGameFlow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/PlayFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddPlayerStateFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGameFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/GameUtilTest.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/Card.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/CardRankEnum.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/CardSuitEnum.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/RankingEnum.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/RoundEnum.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/CardSchemaV1.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/Deck.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GameState.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/RankingUtilTest.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/chat/flows/AddBettingAmountFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddBettingAmountFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/GameUtil.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/RankingUtil.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddPlayerFlow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/GameUtilTest.kt" />
-        <option value="$PROJECT_DIR$/workflows/build.gradle" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGameFlow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/StartGameFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddBettingAmountFlow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/StartGroupChatTests.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/PlayerState.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameSchema.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddPlayerStateFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/PlayFLow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/RankingUtilTest.kt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMemberFlow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddBettingAmountFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMemberStateFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/PlayFlowTests.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMessageFlow.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GroupChatState.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/GroupChatContract.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGroupChat.kt" />
-        <option value="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ProposalState.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/ProposalFlow.kt" />
-        <option value="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddGroupMessageFlowTests.kt" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$" />
+      </set>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="830" />
-    <option name="y" value="15" />
-    <option name="width" value="1149" />
-    <option name="height" value="1044" />
-  </component>
+  <component name="ProjectId" id="1Np23LwyHMRtSRLSg9JzdcxW8BR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Aspire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aspire" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aspire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aspire" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aspire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aspire" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aspire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aspire" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes" type="462c0819:PsiDirectoryNode" />
-              <item name="InsurerB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aspire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aspire" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -390,339 +398,22 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2590604" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.59490085" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMessageFlow.kt</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/FlowTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#23#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.corda/corda-core/4.0/f157f0cd83cd4a5f0a99ed59e718ac62443b52fc/corda-core-4.0-sources.jar!/net/corda/core/contracts/Structures.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3149">
-          <caret line="342" column="27" selection-start-line="342" selection-start-column="27" selection-end-line="342" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/RoundEnum.kt" />
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/StartGameFlow.kt" />
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/Card.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/CardRankEnum.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/CardSuitEnum.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/RankingEnum.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/model/RoundEnum.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/CardSchemaV1.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/Deck.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="e#29#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/Yo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1739">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/GameUtil.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/util/RankingUtil.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/TemplateContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#32#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/GameUtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="18" />
-          <folding>
-            <element signature="e#27#476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/StartGroupChatTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#28#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/MemberState.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#29#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/schema/GameSchema.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/PlayFLow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="146" column="73" selection-start-line="146" selection-start-column="73" selection-end-line="146" selection-end-column="73" />
-          <folding>
-            <element signature="e#28#855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/util/RankingUtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-957">
-          <caret line="483" column="64" selection-start-line="483" selection-start-column="64" selection-end-line="483" selection-end-column="64" />
-          <folding>
-            <element signature="e#28#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMemberFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#28#628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddMemberStateFlowTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/PlayFlowTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="152" column="46" selection-start-line="152" selection-start-column="46" selection-end-line="152" selection-end-column="46" />
-          <folding>
-            <element signature="e#28#576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/DeckContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/GroupChatState.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="e#29#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/contracts/GroupChatContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/StartGroupChat.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="71" column="149" selection-start-line="71" selection-start-column="149" selection-end-line="71" selection-end-column="149" />
-          <folding>
-            <element signature="e#28#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/AcceptanceFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ProposalState.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="23" />
-          <folding>
-            <element signature="e#31#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/com/negotiation/workflows/ProposalFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/main/kotlin/group/chat/flows/AddGroupMessageFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="60" column="57" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="57" />
-          <folding>
-            <element signature="e#26#613#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflows/src/test/kotlin/com/template/flows/AddGroupMessageFlowTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="e#28#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tidying up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidying up code" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
