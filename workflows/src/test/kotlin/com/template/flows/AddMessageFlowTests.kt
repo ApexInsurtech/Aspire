@@ -3,10 +3,7 @@ package com.template.flows
 import assertk.assertThat
 import assertk.assertions.isEqualTo
 import com.template.states.ChatState
-import group.chat.flows.AcceptChatFlow
-import group.chat.flows.AddMessageFlow
-import group.chat.flows.AddMemberFlow
-import group.chat.flows.AddPlayerAcceptor
+import group.chat.flows.*
 import net.corda.core.node.services.queryBy
 import net.corda.core.utilities.getOrThrow
 import net.corda.core.utilities.loggerFor
@@ -48,7 +45,7 @@ class AddMessageFlowTests {
     fun `Add a Betting amount should add the value in game state`() {
         val betAmount = ""
         val notaryNode = network.defaultNotaryNode.info.legalIdentities.first()
-        val startGameFlow = moderator.startFlow(StartGroupChat(notaryNode)).toCompletableFuture()
+        val startGameFlow = moderator.startFlow(StartChat(notaryNode)).toCompletableFuture()
         network.runNetwork()
         val gameUID = startGameFlow.getOrThrow()
 

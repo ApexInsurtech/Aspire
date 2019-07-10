@@ -3,6 +3,7 @@ package com.template.flows
 import com.template.states.MemberState
 import group.chat.flows.AddMemberFlow
 import group.chat.flows.AddPlayerAcceptor
+import group.chat.flows.StartChat
 import net.corda.core.node.services.queryBy
 import net.corda.core.utilities.getOrThrow
 import net.corda.core.utilities.loggerFor
@@ -42,7 +43,7 @@ class AddMemberStateFlowTests {
     @Test
     fun `Add member should return a UID and all its state values are initialized`() {
         val notaryNode = network.defaultNotaryNode.info.legalIdentities.first()
-        val startGameFlow = moderator.startFlow(StartGroupChat(notaryNode)).toCompletableFuture()
+        val startGameFlow = moderator.startFlow(StartChat(notaryNode)).toCompletableFuture()
         network.runNetwork()
         val gameUID = startGameFlow.getOrThrow()
         log.info("game id: $gameUID")
