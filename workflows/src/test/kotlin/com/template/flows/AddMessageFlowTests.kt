@@ -4,7 +4,7 @@ import assertk.assertThat
 import assertk.assertions.isEqualTo
 import com.template.states.ChatState
 import group.chat.flows.AcceptGroupChatFlow
-import group.chat.flows.AddGroupMessageFlow
+import group.chat.flows.AddMessageFlow
 import group.chat.flows.AddMemberFlow
 import group.chat.flows.AddPlayerAcceptor
 import net.corda.core.node.services.queryBy
@@ -58,7 +58,7 @@ class AddMessageFlowTests {
         network.runNetwork()
 //        moderator.startFlow(PlayFLow(gameUID.toString(), RoundEnum.Dealt.name)).toCompletableFuture()
 //        network.runNetwork()
-        memberA.startFlow(AddGroupMessageFlow(gameUID.toString(), betAmount)).toCompletableFuture()
+        memberA.startFlow(AddMessageFlow(gameUID.toString(), betAmount)).toCompletableFuture()
         network.runNetwork()
 
         val moderatorAVault = moderator.services.vaultService.queryBy<ChatState>()

@@ -18,7 +18,7 @@ import java.util.*
 // *********
 @InitiatingFlow
 @StartableByRPC
-class AddGroupMessageFlow(val gameID: String, val message: String) : FlowLogic<Unit>() {
+class AddMessageFlow(val gameID: String, val message: String) : FlowLogic<Unit>() {
     /**
      * Tracks progress throughout the flows call execution.
      */
@@ -85,7 +85,7 @@ class AddGroupMessageFlow(val gameID: String, val message: String) : FlowLogic<U
 
 }
 
-@InitiatedBy(AddGroupMessageFlow::class)
+@InitiatedBy(AddMessageFlow::class)
 class AcceptGroupChatFlow(val otherPartySession: FlowSession) : FlowLogic<SignedTransaction>() {
     @Suspendable
     override fun call(): SignedTransaction {
