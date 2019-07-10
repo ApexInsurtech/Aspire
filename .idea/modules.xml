@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aspire.iml" filepath="$PROJECT_DIR$/.idea/modules/Aspire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/Aspire.clients.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/Aspire.clients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/Aspire.clients.main.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/Aspire.clients.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/Aspire.clients.test.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/Aspire.clients.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/contracts/Aspire.contracts.iml" filepath="$PROJECT_DIR$/.idea/modules/contracts/Aspire.contracts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/contracts/Aspire.contracts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/contracts/Aspire.contracts.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/contracts/Aspire.contracts.test.iml" filepath="$PROJECT_DIR$/.idea/modules/contracts/Aspire.contracts.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aspire.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aspire.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aspire.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aspire.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.main.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.test.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Aspire.workflows.test.iml" />
+    </modules>
+  </component>
+</project>

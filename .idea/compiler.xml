@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Aspire.clients.main" target="1.8" />
+      <module name="Aspire.clients.test" target="1.8" />
+      <module name="Aspire.contracts.main" target="1.8" />
+      <module name="Aspire.contracts.test" target="1.8" />
+      <module name="Aspire.main" target="1.8" />
+      <module name="Aspire.test" target="1.8" />
+      <module name="Aspire.workflows.integrationTest" target="1.8" />
+      <module name="Aspire.workflows.main" target="1.8" />
+      <module name="Aspire.workflows.test" target="1.8" />
+      <module name="com.template.Aspire.clients.main" target="1.8" />
+      <module name="com.template.Aspire.clients.test" target="1.8" />
+      <module name="com.template.Aspire.contracts.main" target="1.8" />
+      <module name="com.template.Aspire.contracts.test" target="1.8" />
+      <module name="com.template.Aspire.main" target="1.8" />
+      <module name="com.template.Aspire.test" target="1.8" />
+      <module name="com.template.Aspire.workflows.integrationTest" target="1.8" />
+      <module name="com.template.Aspire.workflows.main" target="1.8" />
+      <module name="com.template.Aspire.workflows.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
