@@ -20,6 +20,15 @@
       <module name="com.template.Aspire.workflows.integrationTest" target="1.8" />
       <module name="com.template.Aspire.workflows.main" target="1.8" />
       <module name="com.template.Aspire.workflows.test" target="1.8" />
+      <module name="IdeaProjects.Aspire.clients.main" target="1.8" />
+      <module name="IdeaProjects.Aspire.clients.test" target="1.8" />
+      <module name="IdeaProjects.Aspire.contracts.main" target="1.8" />
+      <module name="IdeaProjects.Aspire.contracts.test" target="1.8" />
+      <module name="IdeaProjects.Aspire.main" target="1.8" />
+      <module name="IdeaProjects.Aspire.test" target="1.8" />
+      <module name="IdeaProjects.Aspire.workflows.integrationTest" target="1.8" />
+      <module name="IdeaProjects.Aspire.workflows.main" target="1.8" />
+      <module name="IdeaProjects.Aspire.workflows.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/628140210/IdeaProjects.Aspire.clients.main.iml" filepath="$PROJECT_DIR$/.idea/modules/628140210/IdeaProjects.Aspire.clients.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/628140210/IdeaProjects.Aspire.clients.test.iml" filepath="$PROJECT_DIR$/.idea/modules/628140210/IdeaProjects.Aspire.clients.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-439078453/IdeaProjects.Aspire.contracts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-439078453/IdeaProjects.Aspire.contracts.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-439078453/IdeaProjects.Aspire.contracts.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-439078453/IdeaProjects.Aspire.contracts.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/233287353/IdeaProjects.Aspire.main.iml" filepath="$PROJECT_DIR$/.idea/modules/233287353/IdeaProjects.Aspire.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/233287353/IdeaProjects.Aspire.test.iml" filepath="$PROJECT_DIR$/.idea/modules/233287353/IdeaProjects.Aspire.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1053180094/IdeaProjects.Aspire.workflows.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1053180094/IdeaProjects.Aspire.workflows.integrationTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1053180094/IdeaProjects.Aspire.workflows.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1053180094/IdeaProjects.Aspire.workflows.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1053180094/IdeaProjects.Aspire.workflows.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1053180094/IdeaProjects.Aspire.workflows.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.main.iml" filepath="$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.test.iml" filepath="$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/233287353/Aspire.main.iml" filepath="$PROJECT_DIR$/.idea/modules/233287353/Aspire.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/233287353/Aspire.test.iml" filepath="$PROJECT_DIR$/.idea/modules/233287353/Aspire.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/233287353/com.template.Aspire.iml" filepath="$PROJECT_DIR$/.idea/modules/233287353/com.template.Aspire.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/628140210/com.template.Aspire.clients.iml" filepath="$PROJECT_DIR$/.idea/modules/628140210/com.template.Aspire.clients.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/com.template.Aspire.clients.main.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/com.template.Aspire.clients.main.iml" />
