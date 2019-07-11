@@ -1,21 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="Added oracle">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6e3ffe35-b7af-4727-8265-fd54dd266dfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$BUILDING.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$DECKING.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$FINALISING.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$INITIALISING.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion$SIGNING.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat$Companion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/out/production/classes/com/template/flows/StartGroupChat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/clientnew/corda/examples/oracle/client/flow/CreatePrime.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/net/corda/examples/oracle/base/flow/QueryPrime.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflows/src/main/kotlin/net/corda/examples/oracle/base/flow/SignPrime.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-439078453/Aspire.contracts.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.integrationTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.integrationTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/1053180094/Aspire.workflows.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/233287353/Aspire.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/233287353/Aspire.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/233287353/Aspire.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/233287353/Aspire.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/628140210/Aspire.clients.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/Aspire/.idea/compiler.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/Aspire/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/Aspire/.idea/gradle.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/Aspire/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/Aspire/.idea/modules.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/Aspire/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/Aspire/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/Aspire/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/Aspire/build.gradle" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/Aspire/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Aspire-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Aspire-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Broker/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Broker/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/InsurerA/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-7C411670BD3147EBAD739DD12BB027B1733CE7540D19D7B3E1B801C41093D022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/additional-node-infos/nodeInfo-82C2DD4C7B00FA13C0AB2DBC6ED35AA6AA9AB6EB3AB11A8959376EAC58FEDF26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/nodekeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/nodekeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/sslkeystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/sslkeystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/certificates/truststore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/certificates/truststore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/cordapps/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/cordapps/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/cordapps/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/cordapps/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/logs/node-info-gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/logs/node-info-gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/network-parameters" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/network-parameters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/nodeInfo-777DA369F066FE34BEDE3E6334A1006A4026A02DD76AFA798204BD015C9965DE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/persistence.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/persistence.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/nodes/Notary/persistence.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/nodes/Notary/persistence.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/META-INF/workflows.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/META-INF/workflows.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/AddMemberStateFlowTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/out/test/classes/com/template/flows/StartGroupChatTests.class" afterDir="false" />
     </list>
-    <ignored path="$USER_HOME$/IdeaProjects/Aspire/clients/.gradle/" />
-    <ignored path="$USER_HOME$/IdeaProjects/Aspire/clients/build/" />
-    <ignored path="$USER_HOME$/IdeaProjects/Aspire/contracts/.gradle/" />
-    <ignored path="$USER_HOME$/IdeaProjects/Aspire/workflows/.gradle/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,29 +109,9 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/IdeaProjects/Aspire/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="144" column="21" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/IdeaProjects/Aspire" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$USER_HOME$/IdeaProjects/Aspire/build.gradle" />
-      </list>
-    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -79,7 +120,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="291" />
     <option name="y" value="180" />
     <option name="width" value="1149" />
@@ -88,26 +129,6 @@
   <component name="ProjectId" id="1Np23LwyHMRtSRLSg9JzdcxW8BR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Aspire" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/IdeaProjects/Aspire" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -181,42 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1562766141055</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added oracle">
+      <created>1562799571935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562799571935</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1016" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32919955" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32919955" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" />
-      <window_info anchor="bottom" id="Messages" weight="0.32919955" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -224,20 +218,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -263,14 +244,6 @@
     <MESSAGE value="Added oracle" />
     <option name="LAST_COMMIT_MESSAGE" value="Added oracle" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/IdeaProjects/Aspire/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="144" column="21" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
