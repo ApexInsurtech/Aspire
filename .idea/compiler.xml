@@ -6,7 +6,21 @@
       <module name="Aspire.clients.test" target="1.8" />
       <module name="Aspire.contracts.main" target="1.8" />
       <module name="Aspire.contracts.test" target="1.8" />
+      <module name="Aspire.cordapp-contracts-states.main" target="1.8" />
+      <module name="Aspire.cordapp-contracts-states.test" target="1.8" />
+      <module name="Aspire.cordapp.main" target="1.8" />
+      <module name="Aspire.cordapp.test" target="1.8" />
       <module name="Aspire.main" target="1.8" />
+      <module name="Aspire.modules.main" target="1.8" />
+      <module name="Aspire.modules.manual.main" target="1.8" />
+      <module name="Aspire.modules.manual.test" target="1.8" />
+      <module name="Aspire.modules.ripple.main" target="1.8" />
+      <module name="Aspire.modules.ripple.test" target="1.8" />
+      <module name="Aspire.modules.swift.main" target="1.8" />
+      <module name="Aspire.modules.swift.test" target="1.8" />
+      <module name="Aspire.modules.test" target="1.8" />
+      <module name="Aspire.oracle.main" target="1.8" />
+      <module name="Aspire.oracle.test" target="1.8" />
       <module name="Aspire.test" target="1.8" />
       <module name="Aspire.workflows.integrationTest" target="1.8" />
       <module name="Aspire.workflows.main" target="1.8" />

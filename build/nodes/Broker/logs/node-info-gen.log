@@ -1,11 +1,13 @@
+2019-07-23 14:16:49,709 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+2019-07-23 14:16:49,715 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
 
-[91m   ______               __
+   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         [94mI met my bank manager yesterday and asked
-[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mto check my balance ... he pushed me over!
-[91m\____/     /_/   \__,_/\__,_/[m
+ / /     __  / ___/ __  / __ `/         My professor accused me of plagiarism.
+/ /___  /_/ / /  / /_/ / /_/ /          His words, not mine!
+\____/     /_/   \__,_/\__,_/
 
-[99;1m--- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
+--- Corda Open Source 4.0 (503a2ff) -------------------------------------------------------------
 
-[m
-Logs can be found in                    : /home/john/IdeaProjects/Aspire/build/nodes/Broker/logs
+
+Logs can be found in                    : C:\Users\Hafsa\Aspire\build\nodes\Broker\logs
