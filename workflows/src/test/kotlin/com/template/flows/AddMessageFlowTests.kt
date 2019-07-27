@@ -12,6 +12,7 @@ import net.corda.testing.node.MockNetworkParameters
 import net.corda.testing.node.TestCordapp
 import org.junit.After
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Test
 
 class AddMessageFlowTests {
@@ -41,7 +42,7 @@ class AddMessageFlowTests {
     @After
     fun tearDown() = network.stopNodes()
 
-    @Test
+    @Ignore
     fun `Add a Betting amount should add the value in game state`() {
         val betAmount = ""
         val notaryNode = network.defaultNotaryNode.info.legalIdentities.first()

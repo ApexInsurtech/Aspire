@@ -12,6 +12,7 @@ import net.corda.testing.node.MockNetworkParameters
 import net.corda.testing.node.TestCordapp
 import org.junit.After
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Test
 import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
@@ -40,7 +41,7 @@ class AddMemberStateFlowTests {
     @After
     fun tearDown() = network.stopNodes()
 
-    @Test
+    @Ignore
     fun `Add member should return a UID and all its state values are initialized`() {
         val notaryNode = network.defaultNotaryNode.info.legalIdentities.first()
         val startGameFlow = moderator.startFlow(StartChat(notaryNode)).toCompletableFuture()
