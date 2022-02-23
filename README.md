@@ -1,5 +1,5 @@
 APEX ASPIRE
-Welcome to the Apex Git repo.  If you are reading this, you are part of a privileged few, whom I trust very much.
+Welcome to the Apex Git repo.
 
 TO START:
 
